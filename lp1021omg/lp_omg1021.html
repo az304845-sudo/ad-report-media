@@ -12,13 +12,13 @@ button{font-family:inherit}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:560px;margin:0 auto}
 .top img{height:24px;width:auto}
 .top span{font-size:11px;color:var(--mute);letter-spacing:.06em}
-.fv{position:relative;max-width:560px;margin:0 auto;height:470px;background:#e9edf2 url('__FV_BG__') no-repeat 14% center/cover;overflow:hidden}
+.fv{position:relative;max-width:560px;margin:0 auto;height:400px;background:#e9edf2 url('__FV_BG__') no-repeat 14% center/cover;overflow:hidden}
 .fv::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.9) 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 60%)}
 .fv-copy{position:relative;z-index:1;padding:26px 20px 0}
 .fv-lead{display:inline-block;font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.04em;border-bottom:2px solid var(--navy);padding-bottom:2px}
 .fv-h{margin-top:14px;font-weight:900;color:var(--navy);line-height:1.1;letter-spacing:-.01em}
 .fv-h .s{display:block;font-size:19px;font-weight:800;letter-spacing:.02em;margin-bottom:8px}
-.fv-h .l{display:block;font-size:56px}
+.fv-h .l{display:block;font-size:52px}
 .fv-h .l em{font-style:normal;color:var(--blue)}
 .fv-sub{margin-top:14px;font-size:13px;font-weight:700;color:var(--ink);line-height:1.7}
 .fv-v{position:absolute;z-index:1;left:20px;bottom:14px;font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--navy)}
@@ -37,8 +37,10 @@ button{font-family:inherit}
 .qn::before{content:'Q';display:inline-flex;width:26px;height:26px;border-radius:3px;background:var(--navy);color:#fff;font-size:14px;align-items:center;justify-content:center;margin-right:8px;vertical-align:2px}
 .q{margin-top:6px;font-size:16px;font-weight:700;text-align:center;line-height:1.6;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .opts{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:8px;margin-top:14px}
-.opt{display:flex;align-items:center;gap:10px;min-height:58px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:4px;font-size:14.5px;font-weight:700;color:var(--ink);text-align:left;cursor:pointer;line-height:1.45}
-.opt::before{content:'';flex:none;width:14px;height:14px;border:1.5px solid #9aa4b4;border-radius:50%}
+.opt{display:grid;grid-template-columns:16px 1fr;column-gap:10px;align-items:center;min-height:58px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:4px;font-size:14.5px;font-weight:700;color:var(--ink);text-align:left;cursor:pointer;line-height:1.45}
+.opt::before{content:'';grid-row:1 / span 2;width:14px;height:14px;border:1.5px solid #9aa4b4;border-radius:50%}
+.opt span,.opt small{grid-column:2}
+.opts.one{grid-template-columns:1fr;grid-auto-rows:auto}
 .opt span{display:block}
 .opt:active,.opt:hover{border-color:var(--blue);background:#f2f6fc}
 .opt small{display:block;font-size:11px;color:var(--mute);font-weight:500;margin-top:2px}
@@ -56,9 +58,9 @@ button{font-family:inherit}
 .navy .h2 .mk{background:none;color:#fff;border-bottom:3px solid var(--red)}
 .pains{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:8px;margin-top:22px}
 .pain{border:1px solid rgba(255,255,255,.3);border-radius:4px;padding:12px;font-size:13.5px;font-weight:700;line-height:1.6}
-.pain::before{content:'？';display:block;font-size:17px;color:#ffd34d;font-weight:900;margin-bottom:2px}
+.pain::before{content:'？';display:block;font-size:17px;color:#fff;font-weight:900;margin-bottom:2px}
 .bridge{margin-top:26px;text-align:center;font-size:18px;font-weight:900;line-height:1.7}
-.bridge em{font-style:normal;color:#ffd34d}
+.bridge em{font-style:normal;border-bottom:3px solid var(--red)}
 .pt{display:flex;gap:16px;align-items:flex-start;margin-top:24px}
 .pt .no{flex:none;font-family:'Helvetica Neue',sans-serif;font-size:38px;font-weight:300;color:var(--blue);line-height:1;width:50px}
 .pt h3{font-size:17px;font-weight:900;color:var(--navy);line-height:1.55}
@@ -92,16 +94,16 @@ button{font-family:inherit}
 .load-s{margin-top:4px;font-size:12px;color:var(--mute)}
 #result{padding:24px 0 40px}
 .res-head{text-align:center}
-.res-head .t{display:inline-block;font-size:12px;color:var(--mute);background:var(--soft);border-radius:3px;padding:3px 10px}
+.res-head .t{display:inline-block;font-size:13px;color:var(--mute);background:var(--soft);border-radius:3px;padding:3px 10px}
 .res-head .m{margin-top:12px;font-size:23px;font-weight:900;color:var(--navy);line-height:1.5}
 .res-head .m span{color:var(--blue);font-size:29px}
-.res-cap{margin-top:14px;font-size:12px;color:var(--mute);text-align:center}
+.res-cap{margin-top:14px;font-size:12.5px;color:var(--mute);text-align:center}
 .unis{margin-top:8px}
 .uni{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:13px;margin-top:8px}
 .uni .r{flex:none;width:32px;height:32px;border-radius:3px;background:var(--navy);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
 .uni:first-child .r{background:var(--red)}
 .uni .n{flex:1;font-size:17px;font-weight:900;color:var(--navy);line-height:1.4}
-.uni .fac{display:block;font-size:12px;font-weight:600;color:var(--mute);margin-top:2px}
+.uni .fac{display:block;font-size:13px;font-weight:600;color:var(--mute);margin-top:2px}
 .uni .c{flex:none;font-size:11px;color:var(--mute);text-align:right;line-height:1.2}
 .uni .c b{display:block;font-size:19px;color:var(--ink)}
 .gift{margin-top:24px;background:var(--beige);border-radius:4px;padding:22px 18px}
@@ -116,9 +118,9 @@ button{font-family:inherit}
 .btn{display:block;margin-top:20px;padding:15px 12px;border-radius:4px;background:#06C755;color:#fff;text-align:center;text-decoration:none;line-height:1.35}
 .btn .big{display:block;font-size:19px;font-weight:900}
 .btn .sub{display:block;font-size:11.5px;font-weight:700;opacity:.9}
-.free{margin-top:12px;font-size:11.5px;color:var(--mute);line-height:1.7}
+.free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
-footer{padding:28px 20px 40px;text-align:center;font-size:10.5px;color:var(--mute);line-height:1.8;border-top:1px solid var(--line)}
+footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mute);line-height:1.8;border-top:1px solid var(--line)}
 [hidden]{display:none!important}
 @media(max-width:380px){.fv-h .l{font-size:50px}.opt{font-size:13.5px}}
 </style>
@@ -128,7 +130,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:10.5px;color:var(--mut
   <div class="fv-copy">
    <span class="fv-lead">推薦入試で、わが子が目指せる</span>
    <h1 class="fv-h"><span class="s">難関大29校から見つかる</span><span class="l"><em>大学・学部</em></span><span class="l">診断</span></h1>
-   <p class="fv-sub">評定・英検®・好きなことの<br>近い先輩が多い大学がわかる</p>
+   <p class="fv-sub">評定・英検®・興味が近い<br>先輩の多い大学・学部がわかる</p>
   </div>
   <p class="fv-v">写真：推薦入試専門家 孫 辰洋（リザプロ代表）</p>
  </div>
@@ -155,7 +157,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:10.5px;color:var(--mut
 </section>
 <section class="wrap" id="result" hidden>
  <div class="res-head"><p class="t" id="rcond"></p><h2 class="m" id="rmain"></h2></div>
- <p class="res-cap">評定・英検®・興味の近い先輩が多い順（右の数字はデータの件数）</p>
+ <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
@@ -164,7 +166,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:10.5px;color:var(--mut
   <p class="say" id="giftbody"></p>
   <img class="shot" loading="eager" decoding="async" src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/shindan_shot_v3.webp" alt="合格した志望理由書のサンプル">
   <ul class="spec"><li id="sp1"></li><li>学部適性診断シート</li><li>合格可能性診断シート</li></ul>
-  <a class="btn" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">LINEで受け取る</span><span class="sub">無料・30秒で完了します</span></a>
+  <a class="btn" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">LINEで勉強会を予約する</span><span class="sub">予約特典として志望理由書を受け取れます</span></a>
   <p class="free">友だち追加後、10/21（水）20:00〜の無料オンライン勉強会を予約すると、LINEですぐお届けします。いつでも解除できます。</p>
  </div>
  <p class="again"><button class="back" id="again" type="button">もう一度診断する</button></p>
@@ -179,14 +181,14 @@ footer{padding:28px 20px 40px;text-align:center;font-size:10.5px;color:var(--mut
    <div class="pain">部活ばかりで<br>実績がない</div>
    <div class="pain">学部が多すぎて<br>選べない</div>
   </div>
-  <p class="bridge">それは、評定と英検®だけで<br>大学を<em>探しているから</em>。</p>
+  <p class="bridge">大学・学部選びは、評定・英検®に加えて<br><em>興味や活動</em>も合わせて考えることが大切です。</p>
  </div></section>
  <section class="sec"><div class="wrap">
   <span class="eyebrow">この診断でわかること</span>
   <h2 class="h2">先輩のデータから<br>3校をしぼります</h2>
   <div class="pt"><span class="no">01</span><div><h3>評定・英検®・興味の近い先輩が<br>多い大学・学部がわかる</h3><p>難関大29校の志望理由書データ（リザプロ所有）から、評定・英検®・興味のある分野が近い先輩の多い大学・学部を集計します。</p></div></div>
   <div class="pt"><span class="no">02</span><div><h3>難関大29校から<br>上位3校をしぼって表示</h3><p>早慶上智・GMARCH・関関同立・主要国公立など難関大29校のうち、データの多い順に3校と学部を出します。</p></div></div>
-  <div class="pt"><span class="no">03</span><div><h3>合格者の志望理由書12本が<br>もらえる</h3><p>10/21の勉強会をLINEで予約すると、難関大12校の合格者の志望理由書をお渡しします（予約特典）。</p></div></div>
+  <div class="pt"><span class="no">03</span><div><h3>合格者の志望理由書12本が<br>もらえる</h3><p>10/21の勉強会をLINEで予約すると、合格者の志望理由書12本をお渡しします（予約特典）。</p></div></div>
   <div class="alumni"><img src="__ALUMNI__" alt="リザプロの合格者" loading="lazy"><p>写真はリザプロの合格者です</p></div>
   <a class="go" href="#quiz" id="go1">無料で診断をはじめる<small>全5問・1分</small></a>
  </div></section>
@@ -257,7 +259,7 @@ function render(){
  $('prog').style.width=Math.round(step/QUESTIONS.length*100)+'%';
  $('qn').textContent='質問 '+(step+1)+' / '+QUESTIONS.length;
  $('qt').textContent=(typeof q.t==='function')?q.t():q.t;
- const box=$('opts'); box.innerHTML='';
+ const box=$('opts'); box.innerHTML=''; box.className=q.opts.some(function(o){return !!o.s;})?'opts one':'opts';
  q.opts.forEach(o=>{
   const b=document.createElement('button');
   b.className='opt'; b.type='button';
@@ -315,7 +317,7 @@ function reveal(){
  const names=cell.top.map(t=>t.u);
  $('result').hidden=false; document.querySelector('.gift').hidden=false;
  $('rcond').textContent=label+'／評定'+(A.gpa==='わからない'?'未回答':A.gpa)+'／英検®'+(A.eiken==='なし'?'なし':A.eiken);
- $('rmain').innerHTML='目指せる大学・学部は<br><span>この3校</span>';
+ $('rmain').innerHTML='参考にしたい大学・学部<br><span>上位3校</span>';
  $('unis').innerHTML=cell.top.map((t,i)=>
   '<div class="uni"><div class="r">'+(i+1)+'</div><div class="n">'+t.u+(((t.f?t.f.length:0)>0)?'<span class="fac">'+t.f.join('・')+'</span>':'')+'</div>'+
   '<div class="c"><b>'+t.n+'</b>件</div></div>').join('');
@@ -323,14 +325,14 @@ function reveal(){
  const fit=names.indexOf(BEST[A.field]);
  const short=names.map(n=>n.replace('大学','').replace('慶應義塾','慶應'));
  $('gifthead').innerHTML= fit>=0
-  ? '勉強会のご予約で<br><span>難関大12校の合格者の志望理由書</span>を<br>お渡しします'
-  : '勉強会のご予約で<br><span>難関大12校の合格者の志望理由書</span>を<br>お渡しします';
- $('sp1').innerHTML='<b>難関大12校</b> 合格者の志望理由書';
+  ? '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします'
+  : '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします';
+ $('sp1').innerHTML='合格者の志望理由書 <b>12本</b>';
  A.top3=short.join('・');
  $('cta').href=ctaURL();
  T('result');
  $('giftbody').textContent=EFFORT_LINE[A.effort]+
-  '何を書けば受かるのかは、受かった人の文章を読むのがいちばん早いです。合格者が動き出したのは高2の秋。その秋がいまです。';
+  '合格した先輩の志望理由書は、書き方を考えるときの参考になります。';
  window.scrollTo({top:0,behavior:'smooth'});
 }
 window.addEventListener('pagehide',function(){T('leave');});
