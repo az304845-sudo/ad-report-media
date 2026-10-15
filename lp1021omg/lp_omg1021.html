@@ -125,6 +125,7 @@ button{font-family:inherit}
 .offer{margin-top:12px;border:2px solid var(--navy);border-radius:4px;padding:14px 14px 16px;background:#fff}
 .offer-h{text-align:center;font-size:15px;font-weight:800;line-height:1.6;color:var(--navy)}
 .offer-h b{color:var(--red);font-size:18px}
+.offer-n{margin-top:8px;font-size:11.5px;color:var(--mute);text-align:center}
 .offer-img{margin:8px auto 0;max-width:150px;border-radius:3px}
 .btn-main .big{font-size:19px;line-height:1.4}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
@@ -171,9 +172,10 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
  <div class="offer">
-  <p class="offer-h">この3校を目指すなら<br><b>合格者の志望理由書12本</b>を<br>まず読んでみてください</p>
+  <p class="offer-h">志望理由書を書く参考に<br><b>合格者の志望理由書12本</b>を<br>まず読んでみてください</p>
   <img class="offer-img" loading="eager" decoding="async" src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/shindan_shot_v3.webp" alt="合格した志望理由書のサンプル">
-  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">志望理由書12本を受け取る</span><span class="sub">LINEで10/21の無料勉強会を予約すると届きます</span></a>
+  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">勉強会を予約して12本を受け取る</span><span class="sub">LINEで10/21の無料勉強会を予約すると届きます</span></a>
+  <p class="offer-n">※特典の12本は、結果の3校のものとは限りません</p>
  </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
@@ -221,7 +223,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  </div></section>
 </div>
 </main>
-<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="big">志望理由書12本を受け取る（LINE）</span></a></div>
+<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="big">勉強会を予約して12本を受け取る</span></a></div>
 <footer><p>合否を保証・予測するものではありません。</p><p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p><p>推薦入試専門塾リザプロ</p></footer>
 <script>
 
@@ -263,7 +265,7 @@ function ctaURL(){
  let q;
  try{ q=new URLSearchParams(location.search); }catch(e){ q=new URLSearchParams(); }
  ['page_id','preview','preview_id','preview_nonce','p'].forEach(k=>q.delete(k));
- const mine={free1:A.label,free2:A.gpa,free3:A.eiken,free4:A.effort,free5:A.top3,free6:SID,free7:A.grade};
+ const mine={free1:A.label,free2:A.gpa,free3:A.eiken,free4:A.effort,free5:A.top3,free6:SID};
  for(const k in mine){ if(mine[k]) q.set(k,mine[k]); }
  const s=q.toString();
  return s?LINE_BASE+'?'+s:LINE_BASE;
