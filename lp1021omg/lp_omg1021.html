@@ -12,7 +12,7 @@ button{font-family:inherit}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:560px;margin:0 auto}
 .top img{height:24px;width:auto}
 .top span{font-size:11px;color:var(--mute);letter-spacing:.06em}
-.fv{position:relative;max-width:560px;margin:0 auto;height:400px;background:#e9edf2 url('__FV_BG__') no-repeat 14% center/cover;overflow:hidden}
+.fv{position:relative;max-width:560px;margin:0 auto;height:380px;background:#e9edf2 url('__FV_BG__') no-repeat 14% center/cover;overflow:hidden}
 .fv::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.9) 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 60%)}
 .fv-copy{position:relative;z-index:1;padding:26px 20px 0}
 .fv-lead{display:inline-block;font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.04em;border-bottom:2px solid var(--navy);padding-bottom:2px}
@@ -43,6 +43,7 @@ button{font-family:inherit}
 .opts.one{grid-template-columns:1fr;grid-auto-rows:auto}
 .opt span{display:block}
 .opt:active,.opt:hover{border-color:var(--blue);background:#f2f6fc}
+.opt:active::before,.opt:hover::before{border-color:var(--blue);background:radial-gradient(circle,var(--blue) 0 3.5px,transparent 4px)}
 .opt small{display:block;font-size:11px;color:var(--mute);font-weight:500;margin-top:2px}
 .back{display:block;margin:14px auto 0;background:none;border:0;color:var(--mute);font-size:13px;cursor:pointer;text-decoration:underline}
 .note-s{max-width:560px;margin:10px auto 0;padding:0 20px;font-size:10.5px;color:var(--mute);line-height:1.6}
@@ -97,7 +98,7 @@ button{font-family:inherit}
 .res-head .t{display:inline-block;font-size:13px;color:var(--mute);background:var(--soft);border-radius:3px;padding:3px 10px}
 .res-head .m{margin-top:12px;font-size:23px;font-weight:900;color:var(--navy);line-height:1.5}
 .res-head .m span{color:var(--blue);font-size:29px}
-.res-cap{margin-top:14px;font-size:12.5px;color:var(--mute);text-align:center}
+.res-cap{margin-top:14px;font-size:13px;color:var(--mute);text-align:center}
 .unis{margin-top:8px}
 .uni{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:13px;margin-top:8px}
 .uni .r{flex:none;width:32px;height:32px;border-radius:3px;background:var(--navy);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
@@ -117,7 +118,7 @@ button{font-family:inherit}
 .spec li::before{content:'✓';position:absolute;left:4px;color:var(--blue);font-weight:900}
 .btn{display:block;margin-top:20px;padding:15px 12px;border-radius:4px;background:#06C755;color:#fff;text-align:center;text-decoration:none;line-height:1.35}
 .btn .big{display:block;font-size:19px;font-weight:900}
-.btn .sub{display:block;font-size:11.5px;font-weight:700;opacity:.9}
+.btn .sub{display:block;font-size:13px;font-weight:700;opacity:.9}
 .free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
 footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mute);line-height:1.8;border-top:1px solid var(--line)}
@@ -181,7 +182,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
    <div class="pain">部活ばかりで<br>実績がない</div>
    <div class="pain">学部が多すぎて<br>選べない</div>
   </div>
-  <p class="bridge">大学・学部選びは、評定・英検®に加えて<br><em>興味や活動</em>も合わせて考えることが大切です。</p>
+  <p class="bridge">大学・学部選びは、<br>評定・英検®に加えて<em>興味や活動</em>も<br>合わせて考えることが大切です。</p>
  </div></section>
  <section class="sec"><div class="wrap">
   <span class="eyebrow">この診断でわかること</span>
