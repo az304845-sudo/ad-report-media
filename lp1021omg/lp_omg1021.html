@@ -93,14 +93,14 @@ button{font-family:inherit}
 @keyframes sp{to{transform:rotate(360deg)}}
 .load-t{margin-top:18px;font-size:16px;font-weight:800;color:var(--navy)}
 .load-s{margin-top:4px;font-size:12px;color:var(--mute)}
-#result{padding:24px 0 40px}
+#result{padding:14px 0 40px}
 .res-head{text-align:center}
 .res-head .t{display:inline-block;font-size:13px;color:var(--mute);background:var(--soft);border-radius:3px;padding:3px 10px}
-.res-head .m{margin-top:12px;font-size:23px;font-weight:900;color:var(--navy);line-height:1.5}
-.res-head .m span{color:var(--blue);font-size:29px}
-.res-cap{margin-top:14px;font-size:13px;color:var(--mute);text-align:center}
+.res-head .m{margin-top:8px;font-size:21px;font-weight:900;color:var(--navy);line-height:1.5}
+.res-head .m span{color:var(--blue);font-size:26px}
+.res-cap{margin-top:8px;font-size:12.5px;color:var(--mute);text-align:center}
 .unis{margin-top:8px}
-.uni{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:13px;margin-top:8px}
+.uni{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:10px 12px;margin-top:6px}
 .uni .r{flex:none;width:32px;height:32px;border-radius:3px;background:var(--navy);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
 .uni:first-child .r{background:var(--red)}
 .uni .n{flex:1;font-size:17px;font-weight:900;color:var(--navy);line-height:1.4}
@@ -121,8 +121,12 @@ button{font-family:inherit}
 .btn .sub{display:block;font-size:13px;font-weight:700;opacity:.9}
 .free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
-.btn-main{margin-top:14px}
-.btn-main .big{font-size:18px;line-height:1.4}
+.btn-main{margin-top:12px}
+.offer{margin-top:12px;border:2px solid var(--navy);border-radius:4px;padding:14px 14px 16px;background:#fff}
+.offer-h{text-align:center;font-size:15px;font-weight:800;line-height:1.6;color:var(--navy)}
+.offer-h b{color:var(--red);font-size:18px}
+.offer-img{margin:8px auto 0;max-width:150px;border-radius:3px}
+.btn-main .big{font-size:19px;line-height:1.4}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
 .stick .btn{margin:0 auto;max-width:536px;padding:12px}
 .stick .btn .big{font-size:17px}
@@ -166,14 +170,17 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <div class="res-head"><p class="t" id="rcond"></p><h2 class="m" id="rmain"></h2></div>
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
- <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する（無料・予約特典つき）</span></a>
+ <div class="offer">
+  <p class="offer-h">この3校を目指すなら<br><b>合格者の志望理由書12本</b>を<br>まず読んでみてください</p>
+  <img class="offer-img" loading="eager" decoding="async" src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/shindan_shot_v3.webp" alt="合格した志望理由書のサンプル">
+  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">志望理由書12本を受け取る</span><span class="sub">LINEで10/21の無料勉強会を予約すると届きます</span></a>
+ </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
   <span class="lb">10/21 勉強会の予約特典</span>
   <h3 id="gifthead"></h3>
   <ul class="spec"><li id="sp1"></li><li>学部適性診断シート</li><li>合格可能性診断シート</li></ul>
   <p class="say" id="giftbody"></p>
-  <img class="shot" loading="eager" decoding="async" src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/shindan_shot_v3.webp" alt="合格した志望理由書のサンプル">
   <p class="free">友だち追加後、10/21（水）20:00〜の無料オンライン勉強会を予約すると、LINEですぐお届けします。いつでも解除できます。</p>
  </div>
  <p class="again"><button class="back" id="again" type="button">もう一度チェックする</button></p>
@@ -214,7 +221,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  </div></section>
 </div>
 </main>
-<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="big">LINEで勉強会を予約する</span></a></div>
+<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="big">志望理由書12本を受け取る（LINE）</span></a></div>
 <footer><p>合否を保証・予測するものではありません。</p><p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p><p>推薦入試専門塾リザプロ</p></footer>
 <script>
 
