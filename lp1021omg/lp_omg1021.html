@@ -12,7 +12,7 @@ button{font-family:inherit}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:560px;margin:0 auto}
 .top img{height:24px;width:auto}
 .top span{font-size:11px;color:var(--mute);letter-spacing:.06em}
-.fv{position:relative;max-width:560px;margin:0 auto;height:250px;background:#f4f6f9 url('__FV_BG__') no-repeat 96px center/auto 100%;overflow:hidden}
+.fv{position:relative;max-width:560px;margin:0 auto;height:250px;background:#f2f4f6 url('__FV_BG__') no-repeat left center/auto 100%;overflow:hidden}
 .fv-copy{position:relative;z-index:1;padding:16px 20px 0}
 .fv-lead{display:inline-block;font-size:12px;font-weight:700;color:var(--navy);letter-spacing:.04em;border-bottom:2px solid var(--navy);padding-bottom:2px}
 .fv-h{margin-top:8px;font-weight:900;color:var(--navy);line-height:1.1;letter-spacing:-.01em}
@@ -83,7 +83,7 @@ button{font-family:inherit}
 .who small{display:block;font-size:12px;color:var(--mute);line-height:1.6}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
 .fact{background:var(--soft);border-radius:4px;padding:10px;text-align:center;font-size:12px;font-weight:700;line-height:1.5;color:var(--navy)}
-.fact b{display:block;font-size:19px;font-weight:900}
+.fact b{display:block;font-size:17px;font-weight:900;white-space:nowrap}
 .go{display:block;width:100%;margin-top:24px;padding:15px;border:0;border-radius:4px;background:var(--navy);color:#fff;font-size:17px;font-weight:900;text-align:center;text-decoration:none;cursor:pointer;line-height:1.4}
 .go small{display:block;font-size:11.5px;font-weight:600;opacity:.85}
 .fine{margin-top:10px;text-align:center;font-size:11px;color:var(--mute)}
@@ -92,7 +92,7 @@ button{font-family:inherit}
 @keyframes sp{to{transform:rotate(360deg)}}
 .load-t{margin-top:18px;font-size:16px;font-weight:800;color:var(--navy)}
 .load-s{margin-top:4px;font-size:12px;color:var(--mute)}
-#result{padding:14px 0 40px}
+#result{padding:14px 16px 40px}
 .res-head{text-align:center}
 .res-head .t{display:inline-block;font-size:13px;color:var(--mute);background:var(--soft);border-radius:3px;padding:3px 10px}
 .res-head .m{margin-top:8px;font-size:21px;font-weight:900;color:var(--navy);line-height:1.5}
@@ -120,6 +120,32 @@ button{font-family:inherit}
 .btn .sub{display:block;font-size:13px;font-weight:700;opacity:.9}
 .free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
+.ctabox{margin-top:12px}
+.band{display:block;background:var(--red);color:#fff;text-align:center;font-size:15px;font-weight:900;padding:7px 8px;border-radius:4px 4px 0 0;letter-spacing:.02em}
+.ctabox .band + .btn{margin-top:0;border-radius:0 0 4px 4px}
+.ctanote{margin-top:6px;text-align:center;font-size:12.5px;color:var(--ink);font-weight:700}
+.g-h{margin-top:6px;text-align:center;font-size:17px;font-weight:900;line-height:1.5;color:var(--navy)}
+.g-h span{color:var(--red);font-size:22px}
+.g-img{margin:10px auto 0;width:100%;max-width:420px;border-radius:4px}
+.g-cap{text-align:center;font-size:11px;color:var(--mute);margin-top:2px}
+.g-t{margin-top:8px;font-size:14px;line-height:1.8}
+.gift2{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:0 14px 16px;overflow:hidden}
+.gift2 .band{margin:0 -14px;border-radius:0}
+.lead2{margin-top:14px;font-size:14.5px;line-height:1.85}
+.edu{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.edu h3{display:flex;gap:10px;align-items:flex-start;font-size:17px;font-weight:900;color:var(--navy);line-height:1.5}
+.edu h3 span{flex:none;width:26px;height:26px;border-radius:3px;background:var(--navy);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.edu > p{margin-top:6px;font-size:14px;line-height:1.85;color:#3f4858}
+.case{display:flex;gap:12px;align-items:center;margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:10px}
+.case img{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover}
+.case p{font-size:12.5px;line-height:1.6;color:#3f4858}
+.case b{display:block;font-size:14px;color:var(--navy);line-height:1.5;margin-bottom:2px}
+.quote{margin-top:10px;font-size:13px;line-height:1.75;color:#3f4858;border-left:3px solid var(--red);padding-left:10px}
+.go2{display:block;margin-top:12px;text-align:center;font-size:14px;font-weight:800;color:var(--blue);text-decoration:underline}
+.how-lead{margin-top:14px;text-align:center;font-size:16px;line-height:1.8}
+.how-lead b{color:#fff;border-bottom:3px solid var(--red)}
+.how{margin:16px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:8px}
+.how li{border:1px solid rgba(255,255,255,.35);border-radius:4px;padding:10px;font-size:13.5px;font-weight:700;line-height:1.55;display:flex;align-items:center}
 .btn-main{margin-top:12px}
 .offer{margin-top:12px;border:2px solid var(--navy);border-radius:4px;padding:14px 14px 16px;background:#fff}
 .offer-h{text-align:center;font-size:15px;font-weight:800;line-height:1.6;color:var(--navy)}
@@ -169,51 +195,68 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <div class="res-head"><p class="t" id="rcond"></p><h2 class="m" id="rmain"></h2></div>
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
- <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する（無料・予約特典つき）</span></a>
+ <div class="ctabox">
+  <p class="band">予約特典：合格者の志望理由書12本</p>
+  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する</span></a>
+  <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
+ </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
   <span class="lb">10/21 勉強会の予約特典</span>
-  <h3 id="gifthead"></h3>
+  <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書 12本</span></h3>
+  <img class="g-img" loading="eager" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
+  <p class="g-cap">見本（中身はぼかしています）</p>
+  <p class="g-t">実際に合格した先輩が書いた志望理由書です。何をどう書けばいいかの、いちばんの参考になります。</p>
+  <p class="offer-n">※特典の12本は、結果の3校のものとは限りません</p>
+  <h3 id="gifthead" hidden></h3>
   <ul class="spec"><li id="sp1"></li><li>学部適性診断シート</li><li>合格可能性診断シート</li></ul>
-  <p class="say" id="giftbody"></p>
-  <img class="shot" loading="eager" decoding="async" src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/shindan_shot_v3.webp" alt="合格した志望理由書のサンプル">
+  <p class="say" id="giftbody" hidden></p>
   <p class="free">友だち追加後、10/21（水）20:00〜の無料オンライン勉強会を予約すると、LINEですぐお届けします。いつでも解除できます。</p>
  </div>
  <p class="again"><button class="back" id="again" type="button">もう一度チェックする</button></p>
 </section>
 <div id="more">
- <section class="sec navy"><div class="wrap">
-  <span class="eyebrow">よくあるお悩み</span>
-  <h2 class="h2">なぜ、推薦で<br><span class="mk">受かる大学</span>が分からない？</h2>
-  <div class="pains">
-   <div class="pain">評定が足りるのか<br>分からない</div>
-   <div class="pain">英検®は何級から<br>出せるの？</div>
-   <div class="pain">部活ばかりで<br>実績がない</div>
-   <div class="pain">学部が多すぎて<br>選べない</div>
-  </div>
-  <p class="bridge">大学・学部選びは、<br>評定・英検®に加えて<em>興味や活動</em>も<br>合わせて考えることが大切です。</p>
- </div></section>
- <section class="sec"><div class="wrap">
-  <span class="eyebrow">このチェックでわかること</span>
-  <h2 class="h2">先輩のデータから<br>3校をしぼります</h2>
-  <div class="pt"><span class="no">01</span><div><h3>評定・英検®・興味の近い先輩が<br>多い大学・学部がわかる</h3><p>難関大29校の志望理由書データ（リザプロ所有）から、評定・英検®・興味のある分野が近い先輩の多い大学・学部を集計します。</p></div></div>
-  <div class="pt"><span class="no">02</span><div><h3>難関大29校から<br>上位3校をしぼって表示</h3><p>早慶上智・GMARCH・関関同立・主要国公立など難関大29校のうち、データの多い順に3校と学部を出します。</p></div></div>
-  <div class="pt"><span class="no">03</span><div><h3>合格者の志望理由書12本が<br>もらえる</h3><p>10/21の勉強会をLINEで予約すると、合格者の志望理由書12本をお渡しします（予約特典）。</p></div></div>
+ <section class="sec soft"><div class="wrap">
+  <span class="eyebrow">保護者の方へ</span>
+  <h2 class="h2">うちの子、<br><span class="mk">推薦で行けるの？</span></h2>
+  <p class="lead2">「すごい実績のある子の入試」と思われがちです。でも、リザプロの合格者には、ふつうの高校生がたくさんいます。</p>
   <div class="alumni"><img src="__ALUMNI__" alt="リザプロの合格者" loading="lazy"><p>写真はリザプロの合格者です</p></div>
-  <a class="go" href="#quiz" id="go1">無料でチェックをはじめる<small>全5問・1分</small></a>
+  <div class="edu"><h3><span>1</span>すごい実績がなくても、受かっている</h3><p>特別な賞や肩書きがなくても、ちゃんと対策した普通の子が合格しています。</p>
+   <div class="case"><img src="__CASE_IWATA__" alt="Iさん" loading="lazy"><p><b>評定2.5から 中央大学 経済学部に合格</b>勉強に苦手意識があったIさん。英語と国際協力にテーマを絞りました。</p></div></div>
+  <div class="edu"><h3><span>2</span>好きなこと・興味が、そのまま志望理由になる</h3><p>夢中になってきたことを掘り下げると、「なぜその大学で学びたいか」につながります。</p>
+   <div class="case"><img src="__CASE_IMAMURA__" alt="Iさん" loading="lazy"><p><b>中高6年間バスケ部 → 早稲田大学 スポーツ科学部に合格</b>スポーツ推薦を目指せるような目立った実績はなかったIさん。バスケへの情熱をテーマにしました。</p></div></div>
+  <div class="edu"><h3><span>3</span>部活ばかりでも、目指せる</h3><p>部活に打ち込んだ時間は、そのまま強みになります。</p>
+   <div class="case"><img src="__CASE_TAKAHASHI__" alt="Tくん" loading="lazy"><p><b>高2の評定3.0・サッカー部は高3の11月まで → 立教大学 経済学部に合格</b>一般入試でGMARCHは難しいかも、と不安だったTくん。</p></div>
+   <p class="quote">「高校生活のすべてを、私はチアリーディングに捧げていました」──チアに打ち込んだ先輩も、立教大学に合格しています。</p></div>
+  <div class="edu"><h3><span>4</span>評定・英検®の条件は、思っているより幅がある</h3><p>大学・学部・入試方式によって、求められる評定や英検®はさまざまです。上のチェックで、条件の近い先輩が多い大学を見てみてください。</p>
+   <a class="go2" href="#quiz">大学・学部チェックをする（全5問・1分）</a></div>
+  <div class="edu"><h3><span>5</span>準備は、高2の今から</h3><p>志望理由の材料を集めて言葉にするには時間がかかります。高2の今から始めると、余裕を持って準備できます。</p></div>
+ </div></section>
+ <section class="sec navy"><div class="wrap">
+  <h2 class="h2">じゃあ実際、<br><span class="mk">どうやって？</span></h2>
+  <p class="how-lead">具体的なやり方は、<br><b>10/21の勉強会</b>でお話しします。</p>
+  <ul class="how"><li>何から始めればいいか</li><li>好きなことを志望理由にする方法</li><li>評定・英検®の使い方</li><li>高2の今、やっておくこと</li></ul>
  </div></section>
  <section class="sec beige"><div class="wrap">
   <span class="eyebrow">無料オンライン勉強会</span>
-  <h2 class="h2">チェックのあとは<br>10/21の勉強会へ</h2>
+  <h2 class="h2">10/21（水）20:00〜<br>推薦入試 勉強会</h2>
   <div class="sem">
-   <p class="d"><b>10/21</b><span>（水）20:00〜</span></p>
-   <p class="t">推薦入試 勉強会</p>
-   <ul><li>オンライン開催（Zoom）・参加無料</li><li>カメラOFFでOK。保護者の方だけの参加も歓迎です</li><li>チェックで出た大学を、いつから・何から準備すればいいかがわかります</li></ul>
+   <ul><li>オンライン開催（Zoom）・参加無料</li><li>カメラOFFでOK。保護者の方だけの参加も歓迎です</li></ul>
    <div class="who"><img src="__SON_IMG__" alt="孫 辰洋"><div><b>孫 辰洋</b><small>リザプロ株式会社 代表取締役<br>推薦入試専門家。早稲田大学の推薦入試で4学部すべてに合格</small></div></div>
-   <div class="facts"><div class="fact"><b>98.7%</b>2025年度 合格率※</div><div class="fact"><b>著書3冊</b>推薦入試の本を出版</div></div>
-   <p class="fine">※2025年4月までに対策を始めた生徒様が対象</p>
+   <div class="facts"><div class="fact"><b>10,000件以上</b>の合否データ</div><div class="fact"><b>3,000人以上</b>を指導</div></div>
   </div>
-  <a class="go" href="#quiz" id="go2">まずはチェックしてみる<small>全5問・1分・無料</small></a>
+  <div class="gift2">
+   <p class="band">予約特典</p>
+   <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書 12本</span></h3>
+   <img class="g-img" loading="lazy" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
+   <p class="g-cap">見本（中身はぼかしています）</p>
+   <p class="g-t">実際に合格した先輩が書いた志望理由書です。何をどう書けばいいかの、いちばんの参考になります。</p>
+  </div>
+  <div class="ctabox">
+   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="big">10/21の勉強会を予約する</span><span class="sub">LINEで予約（特典：志望理由書12本）</span></a>
+   <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
+  </div>
+  <a class="go2" href="#quiz">先に大学・学部チェックをする（全5問・1分）</a>
  </div></section>
 </div>
 </main>
@@ -355,6 +398,6 @@ $('back').onclick=()=>{step=Math.max(0,step-1);render();};
 $('again').onclick=()=>{step=0;$('result').hidden=true;$('loading').hidden=true;$('hero').hidden=false;$('quiz').hidden=false;$('more').hidden=false;$('qnote').hidden=false;render();};
 
 </script>
-<script>(function(){var st=document.getElementById('stick'),c=document.getElementById('cta'),c2=document.getElementById('cta2'),r=document.getElementById('result'),seen=false;function sync(){var on=r.hidden?false:!seen;if(st.hidden===on){st.hidden=!on;document.body.classList.toggle('has-stick',on);}}new MutationObserver(sync).observe(r,{attributes:true,attributeFilter:['hidden']});try{new IntersectionObserver(function(es){seen=es[0].isIntersecting;sync();}).observe(c);}catch(e){}c2.addEventListener('click',function(e){e.preventDefault();c.click();});sync();})();</script>
+<script>(function(){var st=document.getElementById('stick'),c=document.getElementById('cta'),c2=document.getElementById('cta2'),r=document.getElementById('result'),seen=false;function sync(){var on=r.hidden?false:!seen;if(st.hidden===on){st.hidden=!on;document.body.classList.toggle('has-stick',on);}}new MutationObserver(sync).observe(r,{attributes:true,attributeFilter:['hidden']});try{new IntersectionObserver(function(es){seen=es[0].isIntersecting;sync();}).observe(c);}catch(e){}c2.addEventListener('click',function(e){e.preventDefault();c.click();});var c3=document.getElementById('cta3');if(c3){c3.addEventListener('click',function(e){e.preventDefault();c.href=ctaURL();c.click();});}sync();})();</script>
 <script>(function(){try{var b=atob('Ci8qID09PT09IFJaUOioiOa4rOOCs+OCoiB2Me+8iDIwMjYtMTAtMDXvvInigJQg6KiI5ris44Gu54Sh44GEIExQIOeUqOOAguOBk+OBriA8c2NyaXB0PiDjga/kuLjjgZTjgajmrovjgZnjgILkuK3ouqvjga/mm7jjgY3mj5vjgYjjgarjgYQgPT09PT0KICog44O76Kiq5ZWP44GU44Go44GrIFNJRCDjgpLnmbrooYzjgZfjgIHooajnpLrjg7tMSU5F5oq85LiL44O76Zui6ISx77yI5rue5Zyo56eS44O75pyA5rex44K544Kv44Ot44O844OrJe+8ieOCkiBMUF/lm57nrZTjg63jgrAg44Gr6YCB44KL77yI44K/44OW44CM44Gd44Gu5LuW44CN44CB44K/44Kk44OX5YiX77yd44Oa44O844K444Gu44K544Op44OD44Kw77yJCiAqIOODu0xJTkXjg5zjgr/jg7PvvIhQcm9MaW5lIOOBriBhZGRmcmllbmQg44Oq44Oz44Kv77yJ44KS5oq844GX44Gf556s6ZaT44CBZnJlZTYg44KSIFNJRCDjgavlm7rlrprjgZnjgovjgIJVUkwg44GL44KJ5p2l44GfIGZyZWU2IOOBr+aNqOOBpuOCiwogKiAgIGZyZWU2IOOBryBTSUQg5bCC55So77yIUHJvTGluZSDjga7lj4vjgaDjgaEg4oeEIExQX+WbnuetlOODreOCsCDjgpLjgaTjgarjgZDllK/kuIDjga7pjbXvvInjgIJmcmVlMeOAnDUg44Gr44Gv6Kem44KJ44Gq44GECiAqIOODu+W6g+WRilVSTOOBriBhZF9pZCAvIGFkX25hbWXvvIhNZXRhIOOBriB7e2FkLmlkfX0gLyB7e2FkLm5hbWV9fe+8ieOCkuWbnuetlOODreOCsOOBq+mAgeOCi++8iOWIneWbnuOBruWApOOCkuaui+OBme+8iQogKiDjg7tMUCDlgbTjga7ml6LlrZjlh6bnkIbvvIhVUkwg44OR44Op44Oh44O844K/44Gu5byV44GN57aZ44GO44O7R1RNIOetie+8ieOBr+OBneOBruOBvuOBvuWLleOBjwogKi8KKGZ1bmN0aW9uKCl7CiAgdmFyIExQID0gJ1NFTUlOQVInOwogIHZhciBUUkFDSyA9ICdodHRwczovL3NjcmlwdC5nb29nbGUuY29tL21hY3Jvcy9zL0FLZnljYndkOXpTTUs1NWFkV3RtMEVnVVJCdGFJeTkyWnhhTm5yNkZhLWo3elozazU4dmF1aHF5TzFjTnh3YlRaSTFiNE9fdTVBL2V4ZWMnOwogIHZhciBGID0gJ2ZyZWU2JywgS0VZID0gJ3NpZF9yenAnLCBUMCA9IERhdGUubm93KCksIE1BWFMgPSAwOwogIHZhciBQQUdFID0gKGxvY2F0aW9uLnBhdGhuYW1lLnJlcGxhY2UoL15cL3xcLyQvZywgJycpIHx8ICd0b3AnKS5zbGljZSgwLCA4MCk7CiAgdmFyIFNJRCA9IChmdW5jdGlvbigpeyB0cnkgeyB2YXIgdiA9IHNlc3Npb25TdG9yYWdlLmdldEl0ZW0oS0VZKTsgaWYgKCF2KSB7IHYgPSAncicgKyBEYXRlLm5vdygpLnRvU3RyaW5nKDM2KSArIE1hdGgucmFuZG9tKCkudG9TdHJpbmcoMzYpLnNsaWNlKDIsIDgpOyBzZXNzaW9uU3RvcmFnZS5zZXRJdGVtKEtFWSwgdik7IH0gcmV0dXJuIHY7IH0gY2F0Y2ggKGUpIHsgcmV0dXJuICdyJyArIERhdGUubm93KCkudG9TdHJpbmcoMzYpICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgOCk7IH0gfSkoKTsKICB2YXIgcTsgdHJ5IHsgcSA9IG5ldyBVUkxTZWFyY2hQYXJhbXMobG9jYXRpb24uc2VhcmNoKTsgfSBjYXRjaCAoZSkgeyBxID0gbnVsbDsgfQogIGZ1bmN0aW9uIGcoayl7IHJldHVybiBxID8gKHEuZ2V0KGspIHx8ICcnKS5zbGljZSgwLCAyMDApIDogJyc7IH0KICB2YXIgQUQgPSBnKCdhZF9pZCcpLCBBRE4gPSBnKCdhZF9uYW1lJyk7CiAgdmFyIFVUTSA9IFsndXRtX3NvdXJjZScsICd1dG1fY2FtcGFpZ24nLCAndXRtX2NvbnRlbnQnXS5tYXAoZykuZmlsdGVyKEJvb2xlYW4pLmpvaW4oJ3wnKTsKICB2YXIgU1JDID0gKHEgJiYgcS5nZXQoJ2ZiY2xpZCcpKSB8fCAvZmFjZWJvb2tcLmNvbXxpbnN0YWdyYW1cLmNvbS9pLnRlc3QoZG9jdW1lbnQucmVmZXJyZXIpID8gJ01ldGEnIDogJyc7CiAgZnVuY3Rpb24gc2VuZChldiwgZXh0cmEpewogICAgdmFyIGQgPSB7IHNpZDogU0lELCBldjogZXYsIGxwOiBMUCwgdHlwZTogUEFHRSwgdXRtOiBVVE0sIHNyYzogU1JDLCBhZDogQUQsIGFkbjogQUROLCByZWY6IGRvY3VtZW50LnJlZmVycmVyIHx8ICcnLCB1YTogbmF2aWdhdG9yLnVzZXJBZ2VudCB8fCAnJywKICAgICAgICAgICAgICBzZWM6IE1hdGgucm91bmQoKERhdGUubm93KCkgLSBUMCkgLyAxMDAwKSwgc2Nyb2xsOiBNQVhTIH07CiAgICBpZiAoZXh0cmEpIHsgZm9yICh2YXIgayBpbiBleHRyYSkgeyBkW2tdID0gZXh0cmFba107IH0gfQogICAgdHJ5IHsgbmF2aWdhdG9yLnNlbmRCZWFjb24oVFJBQ0ssIG5ldyBCbG9iKFtKU09OLnN0cmluZ2lmeShkKV0sIHsgdHlwZTogJ3RleHQvcGxhaW47Y2hhcnNldD1VVEYtOCcgfSkpOyB9IGNhdGNoIChlKSB7fQogIH0KICBzZW5kKCd2aWV3Jyk7CiAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ3Njcm9sbCcsIGZ1bmN0aW9uKCl7IHZhciBoID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50OyB2YXIgcCA9IE1hdGgucm91bmQoKGguc2Nyb2xsVG9wICsgaW5uZXJIZWlnaHQpIC8gTWF0aC5tYXgoMSwgaC5zY3JvbGxIZWlnaHQpICogMTAwKTsgaWYgKHAgPiBNQVhTKSB7IE1BWFMgPSBNYXRoLm1pbigxMDAsIHApOyB9IH0sIHsgcGFzc2l2ZTogdHJ1ZSB9KTsKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncGFnZWhpZGUnLCBmdW5jdGlvbigpeyBzZW5kKCdsZWF2ZScpOyB9KTsKICBmdW5jdGlvbiBpc0xpbmUoYSl7IHJldHVybiBhICYmIGEuaHJlZiAmJiAvYXV0b3Nuc1wuYXBwXC9hZGRmcmllbmRcLy8udGVzdChhLmhyZWYpOyB9CiAgZnVuY3Rpb24gZml4KGEpewogICAgdHJ5IHsgdmFyIHUgPSBuZXcgVVJMKGEuaHJlZik7IHUuc2VhcmNoUGFyYW1zLnNldChGLCBTSUQpOyBhLmhyZWYgPSB1LnRvU3RyaW5nKCk7IHJldHVybiB1LnNlYXJjaFBhcmFtcy5nZXQoRikgfHwgJyc7IH0gY2F0Y2ggKGUpIHsgcmV0dXJuICcnOyB9CiAgfQogIC8vIOihqOekuuaZgueCueOBp+WFqCBMSU5FIOODquODs+OCr+OBriBmcmVlNiDjgpIgU0lEIOOBq+OBl+OBpuOBiuOBj++8iOWPs+OCr+ODquODg+OCr+ODu+mVt+aKvOOBl+OBp+mWi+OBi+OCjOOBpuOCgiBTSUQg44GM5LmX44KL77yJCiAgZnVuY3Rpb24gZml4QWxsKCl7IEFycmF5LnByb3RvdHlwZS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnYVtocmVmKj0iYXV0b3Nucy5hcHAvYWRkZnJpZW5kLyJdJyksIGZpeCk7IH0KICBpZiAoZG9jdW1lbnQucmVhZHlTdGF0ZSA9PT0gJ2xvYWRpbmcnKSB7IGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmaXhBbGwpOyB9IGVsc2UgeyBmaXhBbGwoKTsgfQogIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdsb2FkJywgZml4QWxsKTsKICAvLyDmirzjgZfjgZ/nnqzplpPvvJpMUCDlgbTjga7lh6bnkIbjgYwgaHJlZiDjgpLkvZzjgornm7TjgZfjgZ/lvozjgavjgIHjgoLjgYbkuIDluqYgZnJlZTYg44KSIFNJRCDjgavlm7rlrprjgZfjgabjgYvjgonpgIHjgosKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbihlKXsKICAgIHZhciBhID0gZS50YXJnZXQgJiYgZS50YXJnZXQuY2xvc2VzdCA/IGUudGFyZ2V0LmNsb3Nlc3QoJ2EnKSA6IG51bGw7CiAgICBpZiAoaXNMaW5lKGEpKSB7IGEuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbigpeyBzZW5kKCdsaW5lJywgeyBmNjogZml4KGEpIH0pOyB9LCB7IG9uY2U6IHRydWUgfSk7IH0KICB9LCB0cnVlKTsKfSkoKTsK');var u=new Uint8Array(b.length);for(var i=0;i<b.length;i++){u[i]=b.charCodeAt(i);}var s=document.createElement('script');s.text=new TextDecoder('utf-8').decode(u);document.body.appendChild(s);}catch(e){}})();</script>
 <!-- /wp:html -->
