@@ -115,14 +115,18 @@ button{font-family:inherit}
 .spec{margin:16px 0 0;padding:0;list-style:none}
 .spec li{position:relative;padding-left:24px;font-size:13.5px;margin-top:6px;line-height:1.6}
 .spec li::before{content:'✓';position:absolute;left:4px;color:var(--blue);font-weight:900}
-.btn{display:block;margin-top:14px;padding:15px 12px;border-radius:4px;background:#06C755;color:#fff;text-align:center;text-decoration:none;line-height:1.35}
+.btn{display:flex;align-items:center;gap:10px;min-height:64px;margin-top:14px;padding:10px 12px 10px 14px;border-radius:10px;background:#06C755;color:#fff;text-align:center;text-decoration:none;line-height:1.35;box-shadow:0 4px 0 #04A043;transition:transform .05s}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #04A043}
+.b-ic{flex:none;display:flex}
+.b-tx{flex:1;min-width:0}
+.b-go{flex:none;width:30px;height:30px;border-radius:50%;background:#fff;color:#06C755;font-size:13px;display:flex;align-items:center;justify-content:center;padding-left:2px}
 .btn .big{display:block;font-size:19px;font-weight:900}
 .btn .sub{display:block;font-size:13px;font-weight:700;opacity:.9}
 .free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
 .ctabox{margin-top:12px}
-.band{display:block;background:var(--red);color:#fff;text-align:center;font-size:15px;font-weight:900;padding:7px 8px;border-radius:4px 4px 0 0;letter-spacing:.02em}
-.ctabox .band + .btn{margin-top:0;border-radius:0 0 4px 4px}
+.band{display:block;background:var(--red);color:#fff;text-align:center;font-size:15px;font-weight:900;padding:7px 8px;border-radius:10px 10px 0 0;letter-spacing:.02em}
+.ctabox .band + .btn{margin-top:0;border-radius:0 0 10px 10px}
 .ctanote{margin-top:6px;text-align:center;font-size:12.5px;color:var(--ink);font-weight:700}
 .g-h{margin-top:6px;text-align:center;font-size:17px;font-weight:900;line-height:1.5;color:var(--navy)}
 .g-h span{color:var(--red);font-size:22px}
@@ -154,9 +158,9 @@ button{font-family:inherit}
 .offer-img{margin:8px auto 0;max-width:150px;border-radius:3px}
 .btn-main .big{font-size:19px;line-height:1.4}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
-.stick .btn{margin:0 auto;max-width:536px;padding:12px}
+.stick .btn{margin:0 auto 4px;max-width:536px}
 .stick .btn .big{font-size:17px}
-body.has-stick{padding-bottom:76px}
+body.has-stick{padding-bottom:90px}
 footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mute);line-height:1.8;border-top:1px solid var(--line)}
 [hidden]{display:none!important}
 @media(max-width:380px){.fv-h .l{font-size:34px}.opt{font-size:13.5px}}
@@ -197,7 +201,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <div class="unis" id="unis"></div>
  <div class="ctabox">
   <p class="band">予約特典：合格者の志望理由書12本</p>
-  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する</span></a>
+  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する</span></span><span class="b-go" aria-hidden="true">▶</span></a>
   <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
  </div>
  <p class="note" id="rnote" hidden></p>
@@ -253,14 +257,14 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
    <p class="g-t">実際に合格した先輩が書いた志望理由書です。何をどう書けばいいかの、いちばんの参考になります。</p>
   </div>
   <div class="ctabox">
-   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="big">10/21の勉強会を予約する</span><span class="sub">LINEで予約（特典：志望理由書12本）</span></a>
+   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を予約する</span><span class="sub">LINEで予約（特典：志望理由書12本）</span></span><span class="b-go" aria-hidden="true">▶</span></a>
    <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
   </div>
   <a class="go2" href="#quiz">先に大学・学部チェックをする（全5問・1分）</a>
  </div></section>
 </div>
 </main>
-<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="big">LINEで勉強会を予約する</span></a></div>
+<div class="stick" id="stick" hidden><a class="btn" href="#result" id="cta2" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">LINEで勉強会を予約する</span></span><span class="b-go" aria-hidden="true">▶</span></a></div>
 <footer><p>合否を保証・予測するものではありません。</p><p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p><p>推薦入試専門塾リザプロ</p></footer>
 <script>
 
