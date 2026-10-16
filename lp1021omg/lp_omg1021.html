@@ -1,5 +1,6 @@
 <!-- wp:html -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Barlow+Condensed:wght@600;700&display=swap">
 <style>
 :root{--navy:#0d2a52;--blue:#004DA0;--red:#E50012;--ink:#1c2533;--mute:#5d6676;--line:#d9dee6;--paper:#fff;--soft:#f3f5f8;--beige:#f6f3ee;--f:'Hiragino Sans','Noto Sans JP',sans-serif}
 *,*::before,*::after{box-sizing:border-box}
@@ -233,30 +234,74 @@ body.has-stick{padding-bottom:90px}
 footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mute);line-height:1.8;border-top:1px solid var(--line)}
 [hidden]{display:none!important}
 @media(max-width:380px){.fv-h .l{font-size:34px}.opt{font-size:13.5px}}
+body{--hf:'M PLUS 1p','Hiragino Sans','Noto Sans JP',sans-serif;--nf:'Barlow Condensed','DIN Condensed','Oswald',sans-serif;--mf:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN',sans-serif}
+.tk{font-style:normal;font-size:.7em;letter-spacing:0;font-weight:inherit}
+.tn{font-family:var(--nf);font-weight:700;font-size:1.45em;line-height:1;letter-spacing:.01em;margin:0 .04em}
+.fv-lead,.fv-h,.fv-sub,.h2,.g-h,.edu h3,.res-head .m,.qn,.q,.band,.btn .big,.how-lead,.se-box h3,.se-top b,.facts1,.eyebrow{font-family:var(--hf)}
+.fv-h{font-weight:900;letter-spacing:-.02em}
+.fv-h .s{letter-spacing:-.01em}
+.fv-h .l{letter-spacing:-.04em}
+.fv-lead{font-size:13px;letter-spacing:0}
+.fv-sub{font-size:12.5px;letter-spacing:-.01em}
+.h2{text-align:left;font-size:25px;line-height:1.4;letter-spacing:-.02em}
+.h2 .mk{background:none;padding:0;color:var(--blue)}
+.eyebrow{text-align:left;letter-spacing:.04em}
+.h2 .tn{font-size:1.3em}
+.edu h3{font-size:18px;letter-spacing:-.01em}
+.edu h3 .tk,.se-box h3 .tk,.g-h .tk{font-size:.78em}
+.edu h3{display:block;position:relative;padding-left:36px}
+.edu h3 > span:first-child{position:absolute;left:0;top:2px;font-family:var(--nf);font-size:17px}
+.band .tn{font-size:1.35em}
+.btn .big .tn{font-size:1.3em}
+.res-head .m{letter-spacing:-.02em}
+.g-plus b .tn{font-size:1.25em}
+.qn{font-weight:900}
+.qn .tn{font-size:1.5em;margin-left:4px}
+.qn .tk{font-size:.8em;color:var(--mute)}
+.facts1{max-width:560px;margin:0 auto;padding:6px 16px 6px;font-size:14px;font-weight:900;color:var(--navy);text-align:left;letter-spacing:-.01em;border-bottom:1px solid var(--line)}
+.facts1 .tn{font-size:1.7em;color:var(--blue);vertical-align:-.04em}
+.facts1 .sep{display:inline-block;width:1px;height:14px;background:var(--line);margin:0 10px;vertical-align:-1px}
+.facts1 .free{color:var(--red);font-weight:900}
+.how-lead{text-align:left}
+.how-lead .tn{font-size:1.3em}
+.se-note{font-family:var(--mf);font-weight:700}
+html.p-suki{--hf:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN',sans-serif}
+.p-suki body{--hf:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN',sans-serif;font-family:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN',sans-serif;font-weight:500}
+.p-suki .facts1{display:none}
+.p-suki .h2,.p-suki .se-box h3,.p-suki .se-top b,.p-suki .q,.p-suki .qn,.p-suki .opt span b,.p-suki .res-head .m{font-weight:900}
+.p-suki .opt{font-weight:700}
+.p-suki .se-steps li,.p-suki .se-box > p,.p-suki .se-lead{font-weight:500}
+.fs-img{margin:0 auto;max-width:340px}
+.fs-img img{width:100%;height:auto;aspect-ratio:750/258}
+@media(max-height:700px){.fs-img{max-width:300px}}
+p,li,.q,.opt span{word-break:auto-phrase;text-wrap:pretty;line-break:strict}
+.fv-h .l{letter-spacing:-.07em}
+.fv-h .dt{margin:0 -.28em}
+.p-suki .q{font-weight:700}
+.p-suki .opt span b{font-weight:700}
+.p-suki .qn{font-weight:800}
+.se-steps li{padding:5px 0 5px 50px}
+.se-steps li span{width:42px;font-size:10px;top:8px}
+.fs-sub .tn{font-size:1.5em}
 </style>
 <script>if(/[?&]p=suki(&|$)/.test(location.search)){document.documentElement.className+=' p-suki';}</script>
 <div class="top"><img src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/logo.png" alt="リザプロ"><span>推薦入試専門塾</span></div>
 <header id="hero">
  <div class="fv">
   <div class="fv-copy">
-   <span class="fv-lead">推薦入試で、わが子が目指せる</span>
-   <h1 class="fv-h"><span class="s">早慶上智・MARCH・関関同立</span><span class="l"><em>大学・学部</em></span><span class="l">チェック</span></h1>
-   <p class="fv-sub">評定・英検®・興味が近い<br>先輩の多い大学・学部がわかる</p>
+   <span class="fv-lead">推薦入試<i class="tk">で、</i>わが子<i class="tk">が</i>目指<i class="tk">せる</i></span>
+   <h1 class="fv-h"><span class="s">早慶上智・MARCH・関関同立</span><span class="l"><em>大学<span class="dt">・</span>学部</em></span><span class="l">チェック</span></h1>
+   <p class="fv-sub">評定・英検®・興味<i class="tk">が</i>近い<br>先輩<i class="tk">の</i>多い大学・学部<i class="tk">が</i>わかる</p>
   </div>
  </div>
  <div class="fv-suki">
-  <p class="fs-lead"><span>一般入試だけじゃない！</span></p>
-  <p class="fs-h">推薦なら好きなことで<br><em>合格できる！</em></p>
+  <h1 class="fs-img"><img id="fshead" data-src="__SUKI_HEAD__" alt="一般入試だけじゃない！ 推薦なら好きなことで合格できる！" width="750" height="258"></h1>
   <img class="fs-tiles" id="fstiles" data-src="__SUKI_TILES__" alt="猫で慶應・チアで立教・野球で上智・漫画で明治" width="1036" height="747">
   <p class="fs-cap">写真は実際の合格者です</p>
-  <p class="fs-sub">好きなこと・評定・英検®が近い合格者の例から<br>早慶上智・MARCH・関関同立の大学・学部を<br><b>1分でチェック</b></p>
+  <p class="fs-sub">好きなこと・評定・英検®が近い合格者の例から<br>早慶上智・MARCH・関関同立の大学・学部を<br><b><b class="tn">1</b>分でチェック</b></p>
  </div>
- <script>(function(){try{if(document.documentElement.className.indexOf('p-suki')<0)return;var im=document.getElementById('fstiles');im.src=im.getAttribute('data-src');}catch(e){}})();</script>
- <div class="badges">
-  <div class="badge"><small>対象の大学</small><b>12<span>校</span></b></div>
-  <div class="badge"><small>質問は</small><b>全5問<span>1分</span></b></div>
-  <div class="badge"><small>費用</small><b>無料</b></div>
- </div>
+ <script>(function(){try{if(document.documentElement.className.indexOf('p-suki')<0)return;var im=document.getElementById('fstiles');im.src=im.getAttribute('data-src');var hd=document.getElementById('fshead');hd.src=hd.getAttribute('data-src');}catch(e){}})();</script>
+ <p class="facts1">対象の大学<b class="tn">12</b>校<i class="tk">から</i><i class="sep"></i>全<b class="tn">5</b>問<i class="tk">・約</i><b class="tn">1</b>分<i class="sep"></i><b class="free">無料</b></p>
  <p class="sup">10,000件以上の合否データを持つ推薦入試専門塾リザプロが監修</p>
 </header>
 <main>
@@ -278,16 +323,16 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
  <div class="ctabox">
-  <p class="band">予約特典：結果の3校を含む<br>合格者の志望理由書12本</p>
-  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
+  <p class="band">予約特典：結果<i class="tk">の</i><b class="tn">3</b>校<i class="tk">を</i>含む<br>合格者<i class="tk">の</i>志望理由書<b class="tn">12</b>本</p>
+  <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">この結果<i class="tk">の</i>使い方<i class="tk">を</i><br><b class="tn">10/21</b><i class="tk">の</i>勉強会<i class="tk">で</i>聞く</span><span class="sub">LINEで予約する</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
   <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
  </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
   <span class="lb">10/21 勉強会の予約特典</span>
-  <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書</span></h3>
+  <h3 class="g-h">合格<i class="tk">した</i>先輩<i class="tk">の</i><br><span>本物<i class="tk">の</i>志望理由書</span></h3>
   <p class="g-mine" id="sp1"></p>
-  <p class="g-plus">合格者の志望理由書 <b>12本</b>（12校分）</p>
+  <p class="g-plus">合格者<i class="tk">の</i>志望理由書 <b><b class="tn">12</b>本</b>（12校分）</p>
   <img class="g-img" loading="eager" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
   <p class="g-cap">見本（中身はぼかしています）</p>
   <p class="g-t">実際に合格した先輩が書いた志望理由書です。<br>何をどう書けばいいかの、具体的な参考になります。</p>
@@ -303,7 +348,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
 <div id="more">
  <section class="sec soft" id="sukiEdu"><div class="wrap">
   <span class="eyebrow">保護者の方へ</span>
-  <h2 class="h2">「好きなこと」で合格した4人は、<br><span class="mk">何をしていた？</span></h2>
+  <h2 class="h2">「好きなこと」<i class="tk">で</i>合格<i class="tk">した</i><br><b class="tn">4</b>人<i class="tk">は</i><span class="mk">何をしていた？</span></h2>
   <p class="se-lead">4人に共通しているのは、好きなことや打ち込んだ経験を、<b>大学で学びたいこと</b>につなげたことです。</p>
   <div class="se-case" style="--c:#F28AA6;--cb:#FDE3EA;--ck:#E8336C"><div class="se-top"><img src="__SC_KOMINE__" alt="小峰さん" loading="lazy" width="240" height="240"><p><b><i>猫</i>で慶應義塾大学 法学部</b>小峰さん（FIT入試）</p></div><ul class="se-steps"><li><span>好き</span>猫が大好き。2匹の保護猫を家族に迎えました。</li><li><span>なぜ？</span>新聞で動物の殺処分を知り、命が粗末に扱われる現実に衝撃を受けました。</li><li><span>調べた</span>高1で地元の動物愛護センターへ行き、職員の方から直接話を聞きました。</li><li><span>つなげた</span>根本から変える手段として「法律」に目を向け、法学部へ。</li></ul></div>
   <p class="se-src">未来図の記事より</p>
@@ -332,7 +377,7 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  </div></section>
  <section class="sec soft" id="eduDefault"><div class="wrap">
   <span class="eyebrow">保護者の方へ</span>
-  <h2 class="h2">うちの子、<br><span class="mk">推薦で行けるの？</span></h2>
+  <h2 class="h2">うち<i class="tk">の</i>子<i class="tk">、</i><br><span class="mk">推薦<i class="tk">で</i>行<i class="tk">けるの</i>？</span></h2>
   <p class="lead2">「すごい実績のある子の入試」と思われがちです。でも、リザプロの合格者には、ふつうの高校生がたくさんいます。</p>
   <div class="alumni"><img src="__ALUMNI__" alt="リザプロの合格者" loading="lazy"><p>写真はリザプロの合格者です</p></div>
   <div class="edu"><h3><span>1</span>すごい実績がなくても、<br>合格した先輩がいる</h3><p>特別な賞や肩書きがなくても、推薦で合格した先輩がたくさんいます。</p>
@@ -347,13 +392,13 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
   <div class="edu"><h3><span>5</span>準備は、高2の今から</h3><p>志望理由の材料を集めて言葉にするには時間がかかります。高2の今から始めると、余裕を持って準備できます。</p></div>
  </div></section>
  <section class="sec navy"><div class="wrap">
-  <h2 class="h2">じゃあ実際、<br><span class="mk">どうやって？</span></h2>
-  <p class="how-lead">具体的なやり方は、<br><b>10/21の勉強会</b>でお話しします。</p>
+  <h2 class="h2"><i class="tk">じゃあ</i>実際<i class="tk">、</i><br><span class="mk">どうやって？</span></h2>
+  <p class="how-lead">具体的なやり方は、<br><b><b class="tn">10/21</b><i class="tk">の</i>勉強会</b>でお話しします。</p>
   <ul class="how"><li>何から始めればいいか</li><li>好きなことを志望理由にする方法</li><li>評定・英検®の使い方</li><li>高2の今、やっておくこと</li></ul>
  </div></section>
  <section class="sec beige"><div class="wrap">
   <span class="eyebrow">無料オンライン勉強会</span>
-  <h2 class="h2">10/21（水）20:00〜<br>推薦入試 勉強会</h2>
+  <h2 class="h2"><b class="tn">10/21</b><i class="tk">（水）</i><b class="tn">20:00</b><i class="tk">〜</i><br>推薦入試勉強会</h2>
   <div class="sem">
    <ul><li>オンライン開催（Zoom）・参加無料</li><li>カメラOFFでOK。保護者の方だけの参加も歓迎です</li></ul>
    <div class="who"><img src="__SON_IMG__" alt="孫 辰洋"><div><b>孫 辰洋</b><small>リザプロ株式会社 代表取締役<br>推薦入試専門家。早稲田大学の推薦入試で4学部すべてに合格</small></div></div>
@@ -361,9 +406,9 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
   </div>
   <div class="gift2">
    <p class="band">予約特典</p>
-   <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書</span></h3>
+   <h3 class="g-h">合格<i class="tk">した</i>先輩<i class="tk">の</i><br><span>本物<i class="tk">の</i>志望理由書</span></h3>
    <p class="g-mine">チェックで出た3校の志望理由書も、<br>この12本に入っています</p>
-   <p class="g-plus">合格者の志望理由書 <b>12本</b>（12校分）</p>
+   <p class="g-plus">合格者<i class="tk">の</i>志望理由書 <b><b class="tn">12</b>本</b>（12校分）</p>
    <img class="g-img" loading="lazy" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
    <p class="g-cap">見本（中身はぼかしています）</p>
    <p class="g-t">実際に合格した先輩が書いた志望理由書です。<br>何をどう書けばいいかの、具体的な参考になります。</p>
@@ -431,7 +476,7 @@ const $=id=>document.getElementById(id);
 function render(){
  const q=QUESTIONS[step];
  $('prog').style.width=Math.round(step/QUESTIONS.length*100)+'%';
- $('qn').textContent='質問 '+(step+1)+' / '+QUESTIONS.length;
+ $('qn').innerHTML='質問<b class="tn">'+(step+1)+'</b><i class="tk">／'+QUESTIONS.length+'</i>';
  $('qt').textContent=(typeof q.t==='function')?q.t():q.t;
  const box=$('opts'); box.innerHTML=''; box.className=q.opts.some(function(o){return !!o.s;})?'opts one':'opts';
  q.opts.forEach(o=>{
@@ -491,7 +536,7 @@ function reveal(){
  const names=cell.top.map(t=>t.u);
  $('result').hidden=false; document.querySelector('.gift').hidden=false;
  $('rcond').textContent=label+'／評定'+(A.gpa==='わからない'?'未回答':A.gpa)+'／英検®'+(A.eiken==='なし'?'なし':A.eiken);
- $('rmain').innerHTML='参考にしたい大学・学部<br><span>上位3校</span>';
+ $('rmain').innerHTML='参考<i class="tk">に</i>したい大学・学部<br><span>上位<b class="tn">3</b>校</span>';
  $('unis').innerHTML=cell.top.map((t,i)=>
   '<div class="uni"><div class="r">'+(i+1)+'</div><div class="n">'+t.u+(((t.f?t.f.length:0)>0)?'<span class="fac">'+t.f.join('・')+'</span>':'')+'</div>'+
   '<div class="c"><b>'+t.n+'</b>件</div></div>').join('');
