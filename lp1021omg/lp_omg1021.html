@@ -303,6 +303,21 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
 .p-suki .q,.p-suki .opt span b{font-weight:700}
 .p-suki .h2,.p-suki .se-box h3,.p-suki .se-top b,.p-suki .qn{font-weight:800}
 .p-suki .qn::before{background:#E8336C}
+/* 紺ベタの『どうやって？』をやめ、明るい地＋白カードに（増田さん『紺地に白・青・黄の蛍光が見にくい』） */
+.sec.navy{background:#F2F6F7;color:var(--ink)}
+.sec.navy .h2{color:var(--navy)}
+.sec.navy .h2 .mk{background:none;border:0;padding:0;color:var(--blue)}
+.how-lead{color:var(--navy);text-align:left;font-size:16px}
+.how-lead b{color:var(--blue);border:0}
+.how{grid-template-columns:1fr;grid-auto-rows:auto;gap:8px;counter-reset:hw}
+.how li{counter-increment:hw;background:#fff;border:1px solid #E3E8EB;border-radius:10px;padding:12px 14px;font-size:15.5px;font-weight:700;color:var(--navy);gap:12px}
+.how li::before{content:counter(hw,decimal-leading-zero);flex:none;font-family:var(--nf);font-size:22px;font-weight:700;color:var(--blue);line-height:1}
+.p-suki .sec.navy{background:#FDF8EE}
+.p-suki .how li{border-color:#E5DCC8}
+.p-suki .sec.navy .h2 .mk,.p-suki .how-lead b,.p-suki .how li::before{color:#D9486E}
+.p-suki .h2 .mk{background:none;color:#D9486E;padding:0}
+.p-suki .se-goal div{background:#FBF5E8}
+.p-suki .se-goal div b{color:#D9486E}
 </style>
 <script>if(/[?&]p=suki(&|$)/.test(location.search)){document.documentElement.className+=' p-suki';}</script>
 <div class="top"><img src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/logo.png" alt="リザプロ"><span>推薦入試専門塾</span></div>
