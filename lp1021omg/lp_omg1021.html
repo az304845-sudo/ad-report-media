@@ -125,12 +125,21 @@ button{font-family:inherit}
 .free{margin-top:12px;font-size:13px;color:var(--mute);line-height:1.7}
 .again{text-align:center;margin-top:18px}
 .ctabox{margin-top:12px}
-.band{display:block;background:var(--red);color:#fff;text-align:center;font-size:15px;font-weight:900;padding:7px 8px;border-radius:10px 10px 0 0;letter-spacing:.02em}
+.band{display:block;background:var(--red);color:#fff;text-align:center;font-size:14.5px;line-height:1.45;font-weight:900;padding:7px 8px;border-radius:10px 10px 0 0;letter-spacing:.02em}
 .ctabox .band + .btn{margin-top:0;border-radius:0 0 10px 10px}
 .ctanote{margin-top:6px;text-align:center;font-size:12.5px;color:var(--ink);font-weight:700}
 .g-h{margin-top:6px;text-align:center;font-size:17px;font-weight:900;line-height:1.5;color:var(--navy)}
 .g-h span{color:var(--red);font-size:22px}
 .g-img{margin:10px auto 0;width:100%;max-width:420px;border-radius:4px}
+.g-mine{margin-top:8px;text-align:center;font-size:14.5px;font-weight:700;line-height:1.6;color:var(--ink)}
+.g-mine b{color:var(--blue)}
+.g-plus{margin-top:4px;text-align:center;font-size:15px;font-weight:800;color:var(--navy)}
+.g-plus b{color:var(--red);font-size:18px}
+.g-more{margin-top:14px;text-align:center;font-size:13px;font-weight:700;color:var(--mute)}
+.g-sub{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+.g-sub div{background:#fff;border:1px solid var(--line);border-radius:4px;padding:6px;text-align:center}
+.g-sub img{width:100%;height:auto;border-radius:2px}
+.g-sub b{display:block;margin-top:4px;font-size:12.5px;color:var(--navy);line-height:1.4}
 .g-cap{text-align:center;font-size:11px;color:var(--mute);margin-top:2px}
 .g-t{margin-top:8px;font-size:14px;line-height:1.8}
 .gift2{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:0 14px 16px;overflow:hidden}
@@ -154,7 +163,7 @@ button{font-family:inherit}
 .offer{margin-top:12px;border:2px solid var(--navy);border-radius:4px;padding:14px 14px 16px;background:#fff}
 .offer-h{text-align:center;font-size:15px;font-weight:800;line-height:1.6;color:var(--navy)}
 .offer-h b{color:var(--red);font-size:18px}
-.offer-n{margin-top:8px;font-size:11.5px;color:var(--mute);text-align:center}
+.offer-n{margin-top:8px;font-size:12.5px;color:var(--ink);font-weight:700;text-align:center}
 .offer-img{margin:8px auto 0;max-width:150px;border-radius:3px}
 .btn-main .big{font-size:19px;line-height:1.4}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
@@ -200,20 +209,23 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
  <div class="ctabox">
-  <p class="band">予約特典：合格者の志望理由書12本</p>
+  <p class="band">予約特典：結果の3校の志望理由書<br>＋合格者の志望理由書12本</p>
   <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">この結果の使い方を<br>10/21の勉強会で聞く</span><span class="sub">LINEで予約する</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
   <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
  </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
   <span class="lb">10/21 勉強会の予約特典</span>
-  <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書 12本</span></h3>
+  <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書</span></h3>
+  <p class="g-mine" id="sp1"></p>
+  <p class="g-plus">＋ 合格者の志望理由書 <b>12本</b></p>
   <img class="g-img" loading="eager" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
   <p class="g-cap">見本（中身はぼかしています）</p>
   <p class="g-t">実際に合格した先輩が書いた志望理由書です。何をどう書けばいいかの、いちばんの参考になります。</p>
-  <p class="offer-n">※特典の12本は、結果の3校のものとは限りません</p>
+  <p class="offer-n">結果の3校の志望理由書は、<br>勉強会のご予約後にLINEでお届けします</p>
+  <p class="g-more">ほかにも、ご予約の方全員に</p>
+  <div class="g-sub"><div><img src="__G_GAKUBU__" alt="学部適性診断シート（見本）" loading="lazy"><b>学部適性診断シート</b></div><div><img src="__G_KANOUSEI__" alt="合格可能性診断シート（見本）" loading="lazy"><b>合格可能性診断シート</b></div></div>
   <h3 id="gifthead" hidden></h3>
-  <ul class="spec"><li id="sp1"></li><li>学部適性診断シート</li><li>合格可能性診断シート</li></ul>
   <p class="say" id="giftbody" hidden></p>
   <p class="free">友だち追加後、10/21（水）20:00〜の無料オンライン勉強会を予約すると、LINEですぐお届けします。いつでも解除できます。</p>
  </div>
@@ -251,10 +263,15 @@ footer{padding:28px 20px 40px;text-align:center;font-size:11.5px;color:var(--mut
   </div>
   <div class="gift2">
    <p class="band">予約特典</p>
-   <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書 12本</span></h3>
+   <h3 class="g-h">合格した先輩の<br><span>本物の志望理由書</span></h3>
+   <p class="g-mine">チェックで出た3校の、<br>合格した先輩の志望理由書もお渡しします</p>
+   <p class="g-plus">＋ 合格者の志望理由書 <b>12本</b></p>
    <img class="g-img" loading="lazy" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
    <p class="g-cap">見本（中身はぼかしています）</p>
    <p class="g-t">実際に合格した先輩が書いた志望理由書です。何をどう書けばいいかの、いちばんの参考になります。</p>
+   <p class="offer-n">結果の3校の志望理由書は、<br>勉強会のご予約後にLINEでお届けします</p>
+  <p class="g-more">ほかにも、ご予約の方全員に</p>
+   <div class="g-sub"><div><img src="__G_GAKUBU__" alt="学部適性診断シート（見本）" loading="lazy"><b>学部適性診断シート</b></div><div><img src="__G_KANOUSEI__" alt="合格可能性診断シート（見本）" loading="lazy"><b>合格可能性診断シート</b></div></div>
   </div>
   <div class="ctabox">
    <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を予約する</span><span class="sub">LINEで予約（特典：志望理由書12本）</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
@@ -385,7 +402,7 @@ function reveal(){
  $('gifthead').innerHTML= fit>=0
   ? '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします'
   : '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします';
- $('sp1').innerHTML='合格者の志望理由書 <b>12本</b>';
+ $('sp1').innerHTML='<b>あなたの結果の '+short.join('・')+'</b><br>に合格した先輩の志望理由書も、お渡しします';
  A.top3=short.join('・');
  $('cta').href=ctaURL();
  T('result');
