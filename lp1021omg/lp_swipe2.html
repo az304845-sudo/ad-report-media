@@ -1,0 +1,348 @@
+<!-- wp:html -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700;800;900&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+:root{--red:#c8102e;--red2:#a50d25;--ink:#1d1d1f;--mute:#6b6f76;--line:#e3e3e3;--paper:#fff;--soft:#f6f5f2;--yel:#ffd84d;--hf:'M PLUS 1p','Hiragino Sans','Noto Sans JP',sans-serif;--nf:'Barlow Condensed','DIN Condensed',sans-serif;--f:'Hiragino Sans','Noto Sans JP',sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.85;overflow-wrap:anywhere;font-feature-settings:'palt'}
+p,li{word-break:auto-phrase;text-wrap:pretty;line-break:strict}
+img{max-width:100%;display:block}
+h1,h2,h3,h4,p{margin:0}
+.w{max-width:560px;margin:0 auto;padding:0 18px}
+.tk{font-style:normal;font-size:.68em;letter-spacing:0;font-weight:inherit}
+.tn{font-family:var(--nf);font-weight:700;font-size:1.4em;line-height:1;letter-spacing:.01em;margin:0 .03em}
+.top{display:flex;align-items:center;justify-content:space-between;padding:10px 18px;max-width:560px;margin:0 auto}
+.top img{height:22px;width:auto}
+.top span{font-size:11px;color:var(--mute)}
+.r-fv{padding:14px 0 8px}
+.r-q{font-family:var(--hf);font-weight:900;line-height:1.25;letter-spacing:-.03em}
+.r-q .a{display:block;font-size:19px}
+.r-q .b{display:block;font-size:35px;color:var(--red)}
+.r-q .b small{font-size:.55em;color:var(--ink)}
+.r-q .c{display:block;font-size:20px}
+.r-title{margin-top:6px;font-family:var(--hf);font-weight:900;font-size:17px;line-height:1.45;color:#123a7a}
+.r-title b{display:inline-block;background:var(--yel);padding:0 6px;margin-top:2px;color:var(--ink);font-size:20px}
+.r-hero{display:grid;grid-template-columns:44% 1fr;gap:10px;align-items:stretch;margin-top:10px}
+.r-hero .ph{position:relative}
+.r-hero .ph img{width:100%;height:170px;object-fit:cover;object-position:78% center}
+.r-hero .ph p{position:absolute;left:0;bottom:0;background:rgba(0,0,0,.66);color:#fff;font-size:10.5px;padding:2px 6px;line-height:1.5}
+.r-cover{position:relative;height:170px;background:var(--red);color:#fff;padding:12px 10px;box-shadow:6px 6px 0 rgba(0,0,0,.12);overflow:hidden}
+.r-cover .vt{position:absolute;right:10px;top:10px;writing-mode:vertical-rl;font-family:var(--hf);font-weight:900;font-size:21px;letter-spacing:.02em;line-height:1.15;white-space:nowrap;background:#fff;color:var(--red);padding:8px 4px}
+.r-cover .dt{font-family:var(--hf);font-weight:900;font-size:13px;line-height:1.3}
+.r-cover .dt .tn{font-size:2em;margin-right:2px}
+.r-cover .ct{margin-top:8px;font-family:var(--hf);font-weight:900;font-size:28px;line-height:1.1;background:#fff;color:var(--red);display:inline-block;padding:4px 6px}
+.r-cover .cs{margin-top:6px;font-size:11px;font-weight:800;line-height:1.45}
+.r-cover .on{position:absolute;left:10px;right:10px;bottom:8px;font-size:10.5px;font-weight:800;line-height:1.45;border-top:1px solid rgba(255,255,255,.6);padding-top:4px}
+.r-cap{margin-top:6px;font-size:11px;color:var(--mute)}
+.r-box{margin:10px 0 6px;border:2px solid var(--ink);border-radius:10px;padding:12px;background:#fff}
+.r-bh{background:var(--red);color:#fff;text-align:center;font-family:var(--hf);font-weight:900;font-size:14px;margin:-12px -12px 10px;padding:6px;border-radius:8px 8px 0 0}
+.r-bt{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+.r-bt th,.r-bt td{border-bottom:1px solid var(--line);padding:6px 4px;text-align:left;line-height:1.5}
+.r-bt th{width:42%;font-family:var(--hf);font-weight:900}
+.r-opt{display:flex;align-items:center;gap:10px;border:2px solid var(--red);border-radius:8px;padding:10px;background:#fff7f0}
+.r-opt .rd{flex:none;width:18px;height:18px;border-radius:50%;border:2px solid var(--red);background:radial-gradient(circle,var(--red) 0 4px,transparent 5px)}
+.r-opt div{flex:1;line-height:1.4}
+.r-opt small{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:800;padding:0 6px;border-radius:3px}
+.r-opt b{display:block;font-family:var(--hf);font-size:15px;font-weight:900}
+.r-opt i{display:block;font-style:normal;font-size:11.5px;color:var(--mute)}
+.r-opt em{font-style:normal;font-family:var(--hf);font-weight:900;font-size:15px}
+.r-price{margin-top:0;line-height:1.1;text-align:center;font-family:var(--hf);font-weight:900}
+.r-price .tn{font-size:2.6em;color:var(--red)}
+.r-price small{font-size:13px;color:var(--mute)}
+.btn{display:flex;align-items:center;gap:10px;min-height:62px;margin-top:10px;padding:10px 12px 10px 14px;border-radius:10px;background:#06C755;color:#fff;text-decoration:none;line-height:1.35;box-shadow:0 4px 0 #04A043;font-family:var(--hf)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #04A043}
+.btn .ic{flex:none;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
+.btn .tx{flex:1;text-align:center}
+.btn .big{display:block;font-size:19px;font-weight:900}
+.btn .sub{display:block;font-size:12px;font-weight:700;opacity:.92}
+.btn .go{flex:none;width:28px;height:28px;border-radius:50%;background:#fff;color:#06C755;display:flex;align-items:center;justify-content:center;font-size:12px}
+.r-ok{margin-top:8px;text-align:center;font-size:12.5px;font-weight:800;color:#0a7a3b}
+.r-nt{margin-top:4px;font-size:11px;color:var(--mute);line-height:1.6}
+.r-black{background:#141414;color:#fff;padding:34px 0}
+.r-black h2{font-family:var(--hf);font-weight:900;font-size:26px;line-height:1.4;letter-spacing:-.02em}
+.r-black h2 .y{color:var(--yel)}
+.r-chk{margin:16px 0 0;padding:0;list-style:none;background:#fff;color:var(--ink)}
+.r-chk li{position:relative;padding:12px 12px 12px 44px;border-bottom:1px solid var(--line);font-size:14px;font-weight:700;line-height:1.6}
+.r-chk li::before{content:'';position:absolute;left:12px;top:14px;width:20px;height:20px;border:2px solid var(--ink)}
+.r-chk li::after{content:'';position:absolute;left:18px;top:13px;width:9px;height:15px;border:solid var(--red);border-width:0 3px 3px 0;transform:rotate(45deg)}
+.r-chk li b{color:var(--red)}
+.r-black .end{margin-top:18px;font-family:var(--hf);font-weight:900;font-size:17px;line-height:1.6;text-align:center}
+.r-black .end .y{color:var(--yel);font-size:1.2em}
+.r-sec{padding:40px 0}
+.r-big{font-family:var(--hf);font-weight:900;font-size:30px;line-height:1.3;letter-spacing:-.03em}
+.r-big .r{display:inline-block;background:var(--red);color:#fff;padding:0 6px;margin:2px 0}
+.r-big .q{float:right;font-family:var(--nf);font-size:72px;line-height:.8;color:#d9d9d9;margin:-4px 0 0 8px}
+.r-frame{margin-top:18px;border:2px solid var(--ink);padding:12px 14px;font-size:14.5px;font-weight:700;line-height:1.75}
+.r-frame .lb{display:inline-block;background:var(--ink);color:#fff;font-size:11px;padding:0 8px;margin-bottom:4px}
+.r-frame u{text-decoration:none;color:var(--red);border-bottom:2px solid var(--red)}
+.r-ans{margin-top:18px;font-family:var(--hf);font-weight:900;font-size:20px}
+.r-ans .r{color:var(--red);background:linear-gradient(transparent 70%,#ffe08a 70%);font-size:1.15em}
+.r-txt{margin-top:12px;font-size:14.5px;line-height:1.9}
+.r-band{background:var(--ink);color:#fff;font-family:var(--hf);font-weight:900;font-size:14px;padding:6px 12px;display:inline-block}
+.r-ab{margin-top:16px;display:grid;gap:12px}
+.r-ab .c{border:1.5px solid var(--line);padding:12px;position:relative;background:#fff}
+.r-ab .c .tg{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--ink);color:#fff;font-family:var(--nf);font-size:18px;font-weight:700;margin-right:8px}
+.r-ab .c.b{border-color:var(--red)}
+.r-ab .c.b .tg{background:var(--red)}
+.r-ab .c h4{display:inline;font-family:var(--hf);font-weight:900;font-size:14.5px}
+.r-ab .c .say{margin-top:8px;background:var(--soft);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:700;line-height:1.7}
+.r-ab .c.b .say{background:#fff1f1}
+.r-ab .c .tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.r-ab .c .tags span{font-size:11px;font-weight:800;border:1px solid var(--line);padding:1px 8px;border-radius:20px;color:var(--mute)}
+.r-note{margin-top:6px;font-size:11px;color:var(--mute)}
+.r-redband{margin-top:22px;background:var(--red);color:#fff;text-align:center;padding:14px 12px;font-family:var(--hf);font-weight:900;font-size:19px;line-height:1.55}
+.r-redband small{display:block;font-size:13px;opacity:.9}
+.r-bulb{margin-top:18px;display:flex;gap:12px;align-items:flex-start}
+.r-bulb svg{flex:none}
+.r-bulb p{font-family:var(--hf);font-weight:900;font-size:17px;line-height:1.6}
+.r-bulb p .r{color:var(--red)}
+.r-tbl{margin-top:18px;width:100%;border-collapse:collapse;font-size:13px;text-align:center}
+.r-tbl th,.r-tbl td{border:1px solid var(--line);padding:8px 6px;line-height:1.5}
+.r-tbl thead th{background:var(--ink);color:#fff;font-family:var(--hf);font-size:12px}
+.r-tbl thead th.r{background:var(--red)}
+.r-tbl tbody th{background:var(--soft);font-weight:800;width:28%}
+.r-tbl td.r{color:var(--red);font-weight:800}
+.r-pink{background:#fdeeee;padding:34px 0}
+.r-ex{margin-top:14px;background:#fff;border:1px solid #f0caca;padding:14px}
+.r-ex .hd{display:inline-block;background:var(--ink);color:#fff;font-family:var(--hf);font-weight:900;font-size:13px;padding:2px 10px}
+.r-ex .qt{margin-top:8px;font-size:14px;line-height:1.8}
+.r-ex .ab{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.r-ex .ab div{border:1.5px solid var(--line);padding:10px 8px;text-align:center;font-size:12.5px;font-weight:800;line-height:1.55;background:#fff}
+.r-ex .ab div b{display:block;font-family:var(--hf);font-size:13px;margin-bottom:4px}
+.r-ex .ab div+div{border-color:var(--red);background:#fff7f7}
+.r-ex .ab div+div b{color:var(--red)}
+.r-ex .ab img{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 6px}
+.r-more{margin-top:16px;font-family:var(--hf);font-weight:900;font-size:15px}
+.r-ul{margin:8px 0 0;padding:0;list-style:none}
+.r-ul li{position:relative;padding:4px 0 4px 20px;font-size:14px;line-height:1.7}
+.r-ul li::before{content:'';position:absolute;left:4px;top:.75em;width:8px;height:8px;background:var(--red);border-radius:50%}
+.r-redq{background:var(--red);color:#fff;padding:30px 0;text-align:center}
+.r-redq h2{font-family:var(--hf);font-weight:900;font-size:22px;line-height:1.55}
+.r-redq p{margin-top:10px;font-size:14.5px;font-weight:700}
+.r-redq p b{background:#fff;color:var(--red);padding:0 6px}
+.r-toc{background:#141414;color:#fff;padding:34px 0}
+.r-toc h2{font-family:var(--hf);font-weight:900;font-size:22px;line-height:1.5;text-align:center}
+.r-toc h2 .y{color:var(--yel)}
+.r-toc .chev{width:22px;height:22px;border-right:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(45deg);margin:10px auto 0}
+.r-list{background:#fff;color:var(--ink);margin-top:8px;padding:6px 14px}
+.r-it{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line)}
+.r-it:last-child{border-bottom:0}
+.r-it .ck{flex:none;width:22px;height:22px;border-radius:50%;background:var(--red);position:relative;margin-top:3px}
+.r-it .ck::after{content:'';position:absolute;left:7px;top:4px;width:6px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.r-it p{font-size:14.5px;font-weight:700;line-height:1.7}
+.r-it p .r{color:var(--red)}
+.r-it p small{display:inline-block;margin-left:4px;font-family:var(--hf);font-size:11px;font-weight:900;color:#fff;background:var(--ink);padding:0 6px;border-radius:3px;vertical-align:1px}
+.r-gl{margin-top:18px;font-family:var(--hf);font-weight:900;font-size:14px;color:var(--yel);border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px}
+.r-gl.dk{color:var(--red);border-color:var(--line)}
+.r-list.bd{border:2px solid var(--ink)}
+.r-redlbl{display:block;width:fit-content;margin:22px auto 0;background:var(--red);color:#fff;font-family:var(--hf);font-weight:900;font-size:18px;padding:4px 24px;transform:skew(-8deg)}
+.r-author{background:#1a1a1a;color:#fff;padding:36px 0}
+.r-author .lb{text-align:center;font-family:var(--hf);font-weight:800;font-size:12px;letter-spacing:.3em;color:#bbb}
+.r-author h2{text-align:center;font-family:var(--hf);font-weight:900;font-size:28px;letter-spacing:.12em;margin-top:2px}
+.r-author .ph{margin-top:14px}
+.r-author .ph img{width:100%;height:240px;object-fit:cover;object-position:75% center}
+.r-author .bio{margin-top:14px;font-size:14px;line-height:1.9;color:#e8e8e8}
+.r-author .bio b{color:#fff}
+.r-author .nums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.r-author .nums div{border:1px solid rgba(255,255,255,.3);padding:10px 6px;text-align:center;font-family:var(--hf);font-weight:800;font-size:12px;line-height:1.3}
+.r-author .nums b{display:block;font-family:var(--nf);font-size:30px;color:var(--yel)}
+.r-reasons{background:var(--red);padding:34px 0;color:#fff}
+.r-reasons h2{text-align:center;font-family:var(--hf);font-weight:900;font-size:22px;line-height:1.5}
+.r-rs{margin-top:14px;display:grid;gap:12px}
+.r-rs div{background:#fff;color:var(--ink);padding:14px}
+.r-rs h3{font-family:var(--hf);font-weight:900;font-size:17px;line-height:1.5;color:var(--red)}
+.r-rs h3 .no{display:inline-block;background:var(--red);color:#fff;font-family:var(--nf);font-size:16px;padding:0 6px;margin-right:6px;vertical-align:2px}
+.r-rs p{margin-top:6px;font-size:14px;line-height:1.8}
+.r-voice h2{text-align:center;font-family:var(--hf);font-weight:900;font-size:26px;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:6px 0;letter-spacing:.1em}
+.r-vc{margin-top:16px;border:1px solid var(--line);padding:14px;background:#fff}
+.r-vc .hd{display:flex;gap:10px;align-items:center}
+.r-vc .hd img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.r-vc .hd b{display:block;font-family:var(--hf);font-size:12px;color:var(--mute);font-weight:800}
+.r-vc h3{margin-top:10px;font-family:var(--hf);font-weight:900;font-size:17px;line-height:1.55}
+.r-vc p{margin-top:6px;font-size:14px;line-height:1.85}
+.r-vc small{display:block;margin-top:6px;font-size:11px;color:var(--mute)}
+.r-safe{border:2px solid #c9a24b;background:#fffaf0;padding:20px 16px}
+.r-safe h2{text-align:center;font-family:var(--hf);font-weight:900;font-size:22px;color:#8a6a1f}
+.r-safe ul{margin:12px 0 0;padding:0;list-style:none}
+.r-safe li{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #eedcb0;padding:10px 12px;margin-top:8px;font-size:14px;font-weight:800}
+.r-safe li .n{flex:none;width:26px;height:26px;border-radius:50%;background:#c9a24b;color:#fff;font-family:var(--nf);font-size:16px;display:flex;align-items:center;justify-content:center}
+.r-co h2{font-family:var(--hf);font-weight:900;font-size:20px;border-left:5px solid var(--red);padding-left:10px}
+.r-co table{margin-top:12px;width:100%;border-collapse:collapse;font-size:13.5px}
+.r-co th,.r-co td{border-bottom:1px solid var(--line);padding:10px 6px;text-align:left;vertical-align:top}
+.r-co th{width:30%;color:var(--mute);font-weight:700}
+.r-photos{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:12px}
+.r-photos img{width:100%;height:110px;object-fit:cover}
+footer{padding:22px 18px 40px;background:#f2f2f2;font-size:11px;color:var(--mute);text-align:center;line-height:1.8}
+@media(max-width:380px){.r-q .b{font-size:36px}.r-big{font-size:27px}}
+</style>
+<div class="top"><img src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/logo.png" alt="リザプロ"><span>推薦入試専門塾</span></div>
+
+<section class="r-fv"><div class="w">
+ <h1 class="r-q"><span class="a">なぜ、あの子<i class="tk">は</i></span><span class="b">すごい実績<i class="tk">がなくても</i></span><span class="c">推薦<i class="tk">で</i>受かったのか？</span></h1>
+ <p class="r-title">推薦入試専門塾リザプロ代表が話す<br><b>わが子<i class="tk">の</i>「好き」<i class="tk">を</i>志望理由<i class="tk">に</i>変える勉強会</b></p>
+ <div class="r-hero">
+  <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="eager"><p>講師：孫 辰洋</p></div>
+  <div class="r-cover"><p class="dt"><b class="tn">10/21</b>（水）20:00〜</p><p class="ct">推薦入試<br>勉強会</p><p class="on">オンライン・参加無料<br>講師：孫 辰洋</p></div>
+ </div>
+ <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">✔ カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+</div></section>
+
+<section class="r-black"><div class="w">
+ <h2>「うちの子にも、<br><span class="y">いいところ<i class="tk">は</i>たくさんある」</span></h2>
+ <ul class="r-chk">
+  <li>そう思っているのに、<b>志望理由書に何を書けばいいか</b>わからない。</li>
+  <li>部活をがんばってきたのに、<b>推薦で使える実績がない</b>と思っている。</li>
+  <li>評定が足りない気がして、<b>一般入試しか考えていない</b>。</li>
+  <li>好きなことはあるのに、<b>大学で学びたいことにつながらない</b>。</li>
+ </ul>
+ <p class="end">こんな状況から抜け出す<br><span class="y">新しい考え方</span><i class="tk">を</i>、<br>このページでお伝えします</p>
+</div></section>
+<section class="r-sec"><div class="w">
+ <h2 class="r-big"><span class="q">?</span><span class="r">推薦<i class="tk">で</i>受かる子</span><br><i class="tk">に</i>あって<br><span class="r">受からない子</span><i class="tk">に</i><br>ないもの</h2>
+ <div class="r-frame" style="clear:both"><span class="lb">あなたは</span><br>同じような評定・同じような部活でも、推薦で受かる子と、そうでない子がいます。<u>その違いが何か</u>、わかりますか？</div>
+ <p class="r-ans">その大きな違いの1つが、<br><span class="r">「志望理由」</span>です。</p>
+ <p class="r-txt">言い換えるなら、「なぜ、その大学で学びたいのか」。総合型選抜や学校推薦型選抜では、「大学で何を学びたいか」と、その理由が問われます。</p>
+</div></section>
+<section class="r-sec" style="padding-top:0"><div class="w">
+ <span class="r-band">少し想像してください</span>
+ <p class="r-ans" style="margin-top:10px"><b class="tn">2</b>人<i class="tk">の</i>高校生。同じ評定・同じ部活。<br>大学<i class="tk">で</i>何<i class="tk">を</i>したいか伝わる<i class="tk">の</i><i class="tk">は</i>、どっち？</p>
+ <div class="r-ab">
+  <div class="c"><span class="tg">A</span><h4>Aさん</h4><p class="say">「サッカー部で3年間がんばりました。」</p><div class="tags"><span>評定は同じ</span><span>サッカー部</span></div></div>
+  <div class="c b"><span class="tg">B</span><h4>Bさん</h4><p class="say">「サッカー部で3年間。ケガをした仲間を見て、けがを防ぐ体の使い方に興味を持ちました。大学では、スポーツと体のしくみを学びたいです。」</p><div class="tags"><span>評定は同じ</span><span>サッカー部</span></div></div>
+ </div>
+ <p class="r-note">※わかりやすくするための例です。</p>
+ <p class="r-txt">評定と部活が同じだとしたら……Bさんのほうが、<b>大学で何をしたいのか</b>が伝わると思いませんか？</p>
+ <div class="r-redband"><small>なぜか？</small>Bさん<i class="tk">には</i>、その大学<i class="tk">で</i>学ぶ<br>「理由」<i class="tk">が</i>あるからです。</div>
+ <div class="r-bulb"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c8102e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><p>好きなこと・打ち込んだこと<i class="tk">が</i><br><span class="r">「学びたい理由」</span><i class="tk">に</i>つながると、<br>評定<i class="tk">や</i>実績<i class="tk">だけでは</i>見えない<br>わが子<i class="tk">の</i>良さ<i class="tk">が</i>伝わります。</p></div>
+ <table class="r-tbl"><thead><tr><th></th><th class="r">学びたい理由<br>がある</th><th>理由がない</th></tr></thead>
+  <tbody><tr><th>部活の経験</th><td class="r">志望理由の材料になる</td><td>「がんばった」で終わる</td></tr>
+  <tr><th>好きなこと</th><td class="r">学びたいテーマになる</td><td>趣味のまま</td></tr>
+  <tr><th>面接・書類</th><td class="r">自分の言葉で話せる</td><td>何を書けばいいか迷う</td></tr></tbody></table>
+</div></section>
+<section class="r-pink"><div class="w">
+ <h2 class="r-big" style="font-size:22px">では、勉強会<i class="tk">で</i><i class="tk">は</i><br>どんな話<i class="tk">を</i>するのか？</h2>
+ <p class="r-txt">1つだけ例をご紹介すると……</p>
+ <div class="r-ex">
+  <span class="hd">好きなことを志望理由にする方法</span>
+  <p class="qt">「野球が好き」。これだけでは、志望理由にはなりません。<br>では、上智大学 経済学部に合格した柳田くんは、どうしたのでしょうか？</p>
+  <div class="ab"><div><b>A：「好き」のまま</b>小学4年から<br>野球が好きです</div><div><img src="__SC_YANAGIDA__" alt="柳田くん" loading="lazy"><b>B：柳田くん</b>「好きなスポーツなのに、なぜ衰退するんだろう」<br>→ この疑問を、どう志望理由に？</div></div>
+  <p class="qt">野球への疑問を、柳田くんはどうやって上智大学 経済学部の志望理由にしたのか。その考え方を、勉強会でお話しします。</p>
+  <p class="r-note">柳田くんの話は、リザプロ合格者の声より。</p>
+ </div>
+ <p class="r-more">他にも……</p>
+ <ul class="r-ul"><li>猫への関心を、慶應義塾大学 法学部の志望理由に（小峰さん・未来図の記事より）</li><li>チアに打ち込んだ経験を、立教大学の志望理由に（井上さん・リザプロ合格者）</li><li>漫画への関心を、明治大学 経営学部の志望理由に（小島くん・リザプロ合格者）</li></ul>
+ <p class="r-txt">先輩たちが「好き」をどうつなげたのか。勉強会で、くわしくお話しします。</p>
+</div></section>
+<section class="r-redq"><div class="w">
+ <h2>では、どうすれば<br>わが子<i class="tk">の</i>「学びたい理由」<i class="tk">を</i><br>見つけられるのか？</h2>
+ <p>それが <b>10/21 推薦入試勉強会</b> のテーマです。</p>
+</div></section>
+
+<section class="r-fv"><div class="w">
+ <p class="r-q"><span class="a">なぜ、あの子<i class="tk">は</i></span><span class="b">すごい実績<i class="tk">がなくても</i></span><span class="c">推薦<i class="tk">で</i>受かったのか？</span></p>
+ <p class="r-title">推薦入試専門塾リザプロ代表が話す<br><b>わが子<i class="tk">の</i>「好き」<i class="tk">を</i>志望理由<i class="tk">に</i>変える勉強会</b></p>
+ <div class="r-hero">
+  <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="lazy"><p>講師：孫 辰洋</p></div>
+  <div class="r-cover"><p class="dt"><b class="tn">10/21</b>（水）20:00〜</p><p class="ct">推薦入試<br>勉強会</p><p class="on">オンライン・参加無料<br>講師：孫 辰洋</p></div>
+ </div>
+ <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">✔ カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+</div></section>
+
+<section class="r-toc"><div class="w">
+ <h2>他にも、こんな話<i class="tk">を</i>します<br><span class="y">勉強会<i class="tk">で</i>話すこと<i class="tk">の</i>一部</span></h2>
+ <div class="chev"></div>
+ <p class="r-gl">01 何から始めればいいか</p>
+ <div class="r-list">
+  <div class="r-it"><span class="ck"></span><p>推薦入試（総合型選抜・学校推薦型選抜）と一般入試は、<span class="r">何が違うのか</span>？</p></div>
+  <div class="r-it"><span class="ck"></span><p>「すごい実績がない子」でも、<span class="r">推薦を目指せる理由</span></p></div>
+ </div>
+ <p class="r-gl">02 好きなことを志望理由にする方法</p>
+ <div class="r-list">
+  <div class="r-it"><span class="ck"></span><p>部活・趣味・推し活……<span class="r">「好き」を志望理由の材料に変える</span>考え方</p></div>
+  <div class="r-it"><span class="ck"></span><p>猫・野球・漫画への関心を、<span class="r">先輩はどう志望理由につなげたのか</span></p></div>
+ </div>
+</div></section>
+<p class="r-redlbl">さらに……</p>
+<section class="r-sec" style="padding-top:18px"><div class="w">
+ <p class="r-gl dk">03 評定・英検®の使い方</p>
+ <div class="r-list bd">
+  <div class="r-it"><span class="ck"></span><p>評定の目安は、<span class="r">大学・学部・入試方式でどれくらい違うのか</span></p></div>
+  <div class="r-it"><span class="ck"></span><p>英検®を、<span class="r">推薦でどう生かすか</span></p></div>
+ </div>
+ <p class="r-gl dk">04 高2の今、やっておくこと</p>
+ <div class="r-list bd">
+  <div class="r-it"><span class="ck"></span><p>高2の今から始めると、<span class="r">何が変わるのか</span></p></div>
+  <div class="r-it"><span class="ck"></span><p>残りの高校生活で、<span class="r">志望理由の材料をどう集めるか</span></p></div>
+ </div>
+ <p class="r-note">※当日お話しする内容の一部です。</p>
+</div></section>
+<section class="r-author"><div class="w">
+ <p class="lb">講師</p>
+ <h2>孫 辰洋</h2>
+ <div class="ph"><img src="__LEC_D__" alt="孫 辰洋の講演の様子" loading="lazy"></div>
+ <p class="bio"><b>リザプロ株式会社 代表取締役。</b>推薦入試専門家。早稲田大学の推薦入試で4学部すべてに合格。<br>リザプロは、10,000件以上の合否データを持ち、3,000人以上を指導してきた推薦入試専門塾です。</p>
+ <div class="nums"><div><b>10,000</b>件以上の合否データ</div><div><b>3,000</b>人以上を指導</div></div>
+</div></section>
+<section class="r-reasons"><div class="w">
+ <h2>10/21 推薦入試勉強会<br>おすすめ<b class="tn">3</b>つ<i class="tk">の</i>理由</h2>
+ <div class="r-rs">
+  <div><h3><span class="no">01</span>合否データ10,000件以上の専門塾が話す</h3><p>推薦入試専門塾リザプロの合否データをもとに、推薦入試のしくみと準備の考え方をお話しします。</p></div>
+  <div><h3><span class="no">02</span>「好き」から考える、志望理由のつくり方</h3><p>猫・チア・野球・漫画……先輩たちの実例から、好きなことを志望理由につなげる考え方をお伝えします。</p></div>
+  <div><h3><span class="no">03</span>無料・オンライン・カメラOFFでOK</h3><p>ご自宅から参加できます。保護者の方だけのご参加も歓迎です。</p></div>
+ </div>
+</div></section>
+<section class="r-sec r-voice"><div class="w">
+ <h2>合格者<i class="tk">の</i>事例</h2>
+ <div class="r-vc"><div class="hd"><img src="__CASE_IWATA__" alt="Iさん" loading="lazy"><b>Iさん・中央大学 経済学部</b></div><h3>評定2.5から、中央大学 経済学部に合格</h3><p>勉強に苦手意識があったIさん。英語と国際協力にテーマを絞りました。</p><small>リザプロ合格者の声より（<a href="https://rizapuro.co.jp/interview/3bl12dkfo7xp" target="_blank" rel="noopener">記事</a>）</small></div>
+ <div class="r-vc"><div class="hd"><img src="__CASE_TAKAHASHI__" alt="Tくん" loading="lazy"><b>Tくん・立教大学 経済学部</b></div><h3>高2の評定3.0・サッカー部は高3の11月まで</h3><p>一般入試でGMARCHは難しいかも、と不安だったTくん。立教大学 経済学部に合格しました。</p><small>リザプロ合格者の声より（<a href="https://rizapuro.co.jp/interview/1-ukliqogd" target="_blank" rel="noopener">記事</a>）</small></div>
+ <div class="r-vc"><div class="hd"><img src="__SC_INOUE__" alt="井上さん" loading="lazy"><b>井上さん・立教大学</b></div><h3>「高校生活のすべてを、私はチアリーディングに捧げていました」</h3><p>一般入試しか頭になかった井上さん。担任の先生の助言で総合型選抜を知り、チアの経験をきっかけに志望理由書を書いて合格しました。</p><small>本人の言葉・リザプロ合格者の声より（<a href="https://rizapuro.co.jp/interview/961l-oy9id" target="_blank" rel="noopener">記事</a>）</small></div>
+</div></section>
+<section class="r-sec" style="padding-top:0"><div class="w">
+ <div class="r-safe"><h2>安心して参加できる<b class="tn">4</b>つ<i class="tk">の</i>こと</h2>
+  <ul><li><span class="n">1</span>参加は無料です</li><li><span class="n">2</span>カメラをOFFにしたまま参加できます</li><li><span class="n">3</span>保護者の方だけのご参加も歓迎です</li><li><span class="n">4</span>LINEはいつでも解除できます</li></ul>
+ </div>
+</div></section>
+
+<section class="r-fv"><div class="w">
+ <p class="r-q"><span class="a">なぜ、あの子<i class="tk">は</i></span><span class="b">すごい実績<i class="tk">がなくても</i></span><span class="c">推薦<i class="tk">で</i>受かったのか？</span></p>
+ <p class="r-title">推薦入試専門塾リザプロ代表が話す<br><b>わが子<i class="tk">の</i>「好き」<i class="tk">を</i>志望理由<i class="tk">に</i>変える勉強会</b></p>
+ <div class="r-hero">
+  <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="lazy"><p>講師：孫 辰洋</p></div>
+  <div class="r-cover"><p class="dt"><b class="tn">10/21</b>（水）20:00〜</p><p class="ct">推薦入試<br>勉強会</p><p class="on">オンライン・参加無料<br>講師：孫 辰洋</p></div>
+ </div>
+ <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">✔ カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+</div></section>
+
+<section class="r-sec r-co"><div class="w">
+ <h2>会社概要</h2>
+ <div class="r-photos"><img src="__LEC_B__" alt="リザプロの勉強会" loading="lazy"><img src="__LEC_C__" alt="リザプロの勉強会" loading="lazy"></div>
+ <table><tr><th>会社名</th><td>リザプロ株式会社</td></tr><tr><th>代表取締役</th><td>孫 辰洋</td></tr><tr><th>事業</th><td>推薦入試専門塾リザプロ</td></tr></table>
+</div></section>
+<footer><p>合否を保証・予測するものではありません。</p><p>英検®は、公益財団法人 日本英語検定協会の登録商標です。</p><p>推薦入試専門塾リザプロ</p></footer>
+<script>
+(function(){
+var TRACK='https://script.google.com/macros/s/AKfycbwd9zSMK55adWtm0EgURBtaIy92ZxaNnr6Fa-j7zZ3k58vauhqyO1cNxwbTZI1b4O_u5A/exec';
+var LINE_BASE='https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz';
+var T0=Date.now(),MAXS=0;
+var SID=(function(){try{var v=sessionStorage.getItem('sid_rzp');if(!v){v='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);sessionStorage.setItem('sid_rzp',v);}return v;}catch(e){return 'r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);}})();
+function q(){try{return new URLSearchParams(location.search);}catch(e){return new URLSearchParams();}}
+function UTM(){var p=q();return ['utm_source','utm_campaign','utm_content'].map(function(k){return p.get(k)||'';}).filter(Boolean).join('|');}
+function SRC(){var p=q();if(p.get('fbclid'))return 'Meta';return /facebook\.com|instagram\.com/i.test(document.referrer||'')?'Meta':'';}
+window.addEventListener('scroll',function(){var h=document.documentElement;var s=h.scrollHeight-h.clientHeight;var p=s>0?Math.round((window.pageYOffset||h.scrollTop||0)/s*100):100;if(p>MAXS)MAXS=p;},{passive:true});
+function T(ev){var d={sid:SID,ev:ev,lp:'SHOSEKI',lpid:'L1021-93',utm:UTM(),src:SRC(),sec:Math.round((Date.now()-T0)/1000),scroll:MAXS,ref:document.referrer||'',ua:navigator.userAgent||''};
+ try{navigator.sendBeacon(TRACK,new Blob([JSON.stringify(d)],{type:'text/plain;charset=UTF-8'}));}catch(e){}}
+function url(){var p=q();['page_id','preview','preview_id','preview_nonce','p'].forEach(function(k){p.delete(k);});p.set('free6',SID);var s=p.toString();return s?LINE_BASE+'?'+s:LINE_BASE;}
+var ls=document.querySelectorAll('a.go-line');
+for(var i=0;i<ls.length;i++){ls[i].href=url();ls[i].addEventListener('click',function(){this.href=url();T('line');
+ try{var K='rzp_lbc_ts',n=Date.now(),pv=0;try{pv=+localStorage.getItem(K)||0;}catch(_){}
+ if(n-pv>6048e5){if(typeof fbq==='function'){fbq('trackCustom','LineButtonClick',{content_name:'10/21_書籍LP写し',content_category:'LINE友だち追加'},{eventID:'LBC-'+n+'-'+Math.random().toString(36).slice(2,10)});}try{localStorage.setItem(K,String(n));}catch(_){}}}catch(e){}});}
+T('view');
+window.addEventListener('pagehide',function(){T('leave');});
+})();
+</script>
+<script>(function(){try{var b=atob('Ci8qID09PT09IFJaUOioiOa4rOOCs+OCoiB2Me+8iDIwMjYtMTAtMDXvvInigJQg6KiI5ris44Gu54Sh44GEIExQIOeUqOOAguOBk+OBriA8c2NyaXB0PiDjga/kuLjjgZTjgajmrovjgZnjgILkuK3ouqvjga/mm7jjgY3mj5vjgYjjgarjgYQgPT09PT0KICog44O76Kiq5ZWP44GU44Go44GrIFNJRCDjgpLnmbrooYzjgZfjgIHooajnpLrjg7tMSU5F5oq85LiL44O76Zui6ISx77yI5rue5Zyo56eS44O75pyA5rex44K544Kv44Ot44O844OrJe+8ieOCkiBMUF/lm57nrZTjg63jgrAg44Gr6YCB44KL77yI44K/44OW44CM44Gd44Gu5LuW44CN44CB44K/44Kk44OX5YiX77yd44Oa44O844K444Gu44K544Op44OD44Kw77yJCiAqIOODu0xJTkXjg5zjgr/jg7PvvIhQcm9MaW5lIOOBriBhZGRmcmllbmQg44Oq44Oz44Kv77yJ44KS5oq844GX44Gf556s6ZaT44CBZnJlZTYg44KSIFNJRCDjgavlm7rlrprjgZnjgovjgIJVUkwg44GL44KJ5p2l44GfIGZyZWU2IOOBr+aNqOOBpuOCiwogKiAgIGZyZWU2IOOBryBTSUQg5bCC55So77yIUHJvTGluZSDjga7lj4vjgaDjgaEg4oeEIExQX+WbnuetlOODreOCsCDjgpLjgaTjgarjgZDllK/kuIDjga7pjbXvvInjgIJmcmVlMeOAnDUg44Gr44Gv6Kem44KJ44Gq44GECiAqIOODu+W6g+WRilVSTOOBriBhZF9pZCAvIGFkX25hbWXvvIhNZXRhIOOBriB7e2FkLmlkfX0gLyB7e2FkLm5hbWV9fe+8ieOCkuWbnuetlOODreOCsOOBq+mAgeOCi++8iOWIneWbnuOBruWApOOCkuaui+OBme+8iQogKiDjg7tMUCDlgbTjga7ml6LlrZjlh6bnkIbvvIhVUkwg44OR44Op44Oh44O844K/44Gu5byV44GN57aZ44GO44O7R1RNIOetie+8ieOBr+OBneOBruOBvuOBvuWLleOBjwogKi8KKGZ1bmN0aW9uKCl7CiAgdmFyIExQID0gJ1NFTUlOQVInOwogIHZhciBUUkFDSyA9ICdodHRwczovL3NjcmlwdC5nb29nbGUuY29tL21hY3Jvcy9zL0FLZnljYndkOXpTTUs1NWFkV3RtMEVnVVJCdGFJeTkyWnhhTm5yNkZhLWo3elozazU4dmF1aHF5TzFjTnh3YlRaSTFiNE9fdTVBL2V4ZWMnOwogIHZhciBGID0gJ2ZyZWU2JywgS0VZID0gJ3NpZF9yenAnLCBUMCA9IERhdGUubm93KCksIE1BWFMgPSAwOwogIHZhciBQQUdFID0gKGxvY2F0aW9uLnBhdGhuYW1lLnJlcGxhY2UoL15cL3xcLyQvZywgJycpIHx8ICd0b3AnKS5zbGljZSgwLCA4MCk7CiAgdmFyIFNJRCA9IChmdW5jdGlvbigpeyB0cnkgeyB2YXIgdiA9IHNlc3Npb25TdG9yYWdlLmdldEl0ZW0oS0VZKTsgaWYgKCF2KSB7IHYgPSAncicgKyBEYXRlLm5vdygpLnRvU3RyaW5nKDM2KSArIE1hdGgucmFuZG9tKCkudG9TdHJpbmcoMzYpLnNsaWNlKDIsIDgpOyBzZXNzaW9uU3RvcmFnZS5zZXRJdGVtKEtFWSwgdik7IH0gcmV0dXJuIHY7IH0gY2F0Y2ggKGUpIHsgcmV0dXJuICdyJyArIERhdGUubm93KCkudG9TdHJpbmcoMzYpICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgOCk7IH0gfSkoKTsKICB2YXIgcTsgdHJ5IHsgcSA9IG5ldyBVUkxTZWFyY2hQYXJhbXMobG9jYXRpb24uc2VhcmNoKTsgfSBjYXRjaCAoZSkgeyBxID0gbnVsbDsgfQogIGZ1bmN0aW9uIGcoayl7IHJldHVybiBxID8gKHEuZ2V0KGspIHx8ICcnKS5zbGljZSgwLCAyMDApIDogJyc7IH0KICB2YXIgQUQgPSBnKCdhZF9pZCcpLCBBRE4gPSBnKCdhZF9uYW1lJyk7CiAgdmFyIFVUTSA9IFsndXRtX3NvdXJjZScsICd1dG1fY2FtcGFpZ24nLCAndXRtX2NvbnRlbnQnXS5tYXAoZykuZmlsdGVyKEJvb2xlYW4pLmpvaW4oJ3wnKTsKICB2YXIgU1JDID0gKHEgJiYgcS5nZXQoJ2ZiY2xpZCcpKSB8fCAvZmFjZWJvb2tcLmNvbXxpbnN0YWdyYW1cLmNvbS9pLnRlc3QoZG9jdW1lbnQucmVmZXJyZXIpID8gJ01ldGEnIDogJyc7CiAgZnVuY3Rpb24gc2VuZChldiwgZXh0cmEpewogICAgdmFyIGQgPSB7IHNpZDogU0lELCBldjogZXYsIGxwOiBMUCwgdHlwZTogUEFHRSwgdXRtOiBVVE0sIHNyYzogU1JDLCBhZDogQUQsIGFkbjogQUROLCByZWY6IGRvY3VtZW50LnJlZmVycmVyIHx8ICcnLCB1YTogbmF2aWdhdG9yLnVzZXJBZ2VudCB8fCAnJywKICAgICAgICAgICAgICBzZWM6IE1hdGgucm91bmQoKERhdGUubm93KCkgLSBUMCkgLyAxMDAwKSwgc2Nyb2xsOiBNQVhTIH07CiAgICBpZiAoZXh0cmEpIHsgZm9yICh2YXIgayBpbiBleHRyYSkgeyBkW2tdID0gZXh0cmFba107IH0gfQogICAgdHJ5IHsgbmF2aWdhdG9yLnNlbmRCZWFjb24oVFJBQ0ssIG5ldyBCbG9iKFtKU09OLnN0cmluZ2lmeShkKV0sIHsgdHlwZTogJ3RleHQvcGxhaW47Y2hhcnNldD1VVEYtOCcgfSkpOyB9IGNhdGNoIChlKSB7fQogIH0KICBzZW5kKCd2aWV3Jyk7CiAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ3Njcm9sbCcsIGZ1bmN0aW9uKCl7IHZhciBoID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50OyB2YXIgcCA9IE1hdGgucm91bmQoKGguc2Nyb2xsVG9wICsgaW5uZXJIZWlnaHQpIC8gTWF0aC5tYXgoMSwgaC5zY3JvbGxIZWlnaHQpICogMTAwKTsgaWYgKHAgPiBNQVhTKSB7IE1BWFMgPSBNYXRoLm1pbigxMDAsIHApOyB9IH0sIHsgcGFzc2l2ZTogdHJ1ZSB9KTsKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncGFnZWhpZGUnLCBmdW5jdGlvbigpeyBzZW5kKCdsZWF2ZScpOyB9KTsKICBmdW5jdGlvbiBpc0xpbmUoYSl7IHJldHVybiBhICYmIGEuaHJlZiAmJiAvYXV0b3Nuc1wuYXBwXC9hZGRmcmllbmRcLy8udGVzdChhLmhyZWYpOyB9CiAgZnVuY3Rpb24gZml4KGEpewogICAgdHJ5IHsgdmFyIHUgPSBuZXcgVVJMKGEuaHJlZik7IHUuc2VhcmNoUGFyYW1zLnNldChGLCBTSUQpOyBhLmhyZWYgPSB1LnRvU3RyaW5nKCk7IHJldHVybiB1LnNlYXJjaFBhcmFtcy5nZXQoRikgfHwgJyc7IH0gY2F0Y2ggKGUpIHsgcmV0dXJuICcnOyB9CiAgfQogIC8vIOihqOekuuaZgueCueOBp+WFqCBMSU5FIOODquODs+OCr+OBriBmcmVlNiDjgpIgU0lEIOOBq+OBl+OBpuOBiuOBj++8iOWPs+OCr+ODquODg+OCr+ODu+mVt+aKvOOBl+OBp+mWi+OBi+OCjOOBpuOCgiBTSUQg44GM5LmX44KL77yJCiAgZnVuY3Rpb24gZml4QWxsKCl7IEFycmF5LnByb3RvdHlwZS5mb3JFYWNoLmNhbGwoZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnYVtocmVmKj0iYXV0b3Nucy5hcHAvYWRkZnJpZW5kLyJdJyksIGZpeCk7IH0KICBpZiAoZG9jdW1lbnQucmVhZHlTdGF0ZSA9PT0gJ2xvYWRpbmcnKSB7IGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmaXhBbGwpOyB9IGVsc2UgeyBmaXhBbGwoKTsgfQogIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdsb2FkJywgZml4QWxsKTsKICAvLyDmirzjgZfjgZ/nnqzplpPvvJpMUCDlgbTjga7lh6bnkIbjgYwgaHJlZiDjgpLkvZzjgornm7TjgZfjgZ/lvozjgavjgIHjgoLjgYbkuIDluqYgZnJlZTYg44KSIFNJRCDjgavlm7rlrprjgZfjgabjgYvjgonpgIHjgosKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbihlKXsKICAgIHZhciBhID0gZS50YXJnZXQgJiYgZS50YXJnZXQuY2xvc2VzdCA/IGUudGFyZ2V0LmNsb3Nlc3QoJ2EnKSA6IG51bGw7CiAgICBpZiAoaXNMaW5lKGEpKSB7IGEuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbigpeyBzZW5kKCdsaW5lJywgeyBmNjogZml4KGEpIH0pOyB9LCB7IG9uY2U6IHRydWUgfSk7IH0KICB9LCB0cnVlKTsKfSkoKTsK');var u=new Uint8Array(b.length);for(var i=0;i<b.length;i++){u[i]=b.charCodeAt(i);}var s=document.createElement('script');s.text=new TextDecoder('utf-8').decode(u);document.body.appendChild(s);}catch(e){}})();</script>
+<!-- /wp:html -->
