@@ -404,7 +404,7 @@ const LINE_BASE='https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz';
 const SID=(function(){try{let v=sessionStorage.getItem('sid_rzp');if(!v){v='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);sessionStorage.setItem('sid_rzp',v);}return v;}catch(e){return Date.now().toString(36)+Math.random().toString(36).slice(2,8);}})();
 function T(ev,extra){
  if(!TRACK||TRACK.indexOf('__')===0)return;
- const d=Object.assign({sid:SID,ev:ev,lp:'shindanB',lpid:'L1021-91',grade:A.grade||'',field:A.label||'',fieldkey:A.field||'',gpa:A.gpa||'',eiken:A.eiken||'',effort:A.effort||'',top3:A.top3||'',utm:UTM(),src:SRC(),sec:SEC(),scroll:MAXS,ref:document.referrer||'',ua:navigator.userAgent||''},extra||{});
+ const d=Object.assign({sid:SID,ev:ev,lp:'shindanB',lpid:'L1021-91',type:(document.documentElement.className.indexOf('p-suki')>=0?'suki':''),grade:A.grade||'',field:A.label||'',fieldkey:A.field||'',gpa:A.gpa||'',eiken:A.eiken||'',effort:A.effort||'',top3:A.top3||'',utm:UTM(),src:SRC(),sec:SEC(),scroll:MAXS,ref:document.referrer||'',ua:navigator.userAgent||''},extra||{});
  try{navigator.sendBeacon(TRACK,new Blob([JSON.stringify(d)],{type:'text/plain;charset=UTF-8'}));}
  catch(e){try{fetch(TRACK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify(d)});}catch(_){}}
 }
