@@ -117,7 +117,7 @@ html.p-suki{--navy:#1B2559;--ink:#1B2559;--blue:#E8336C;--red:#E8336C;--mute:#66
 .p-suki .opts > .opt:last-child:nth-child(odd){grid-column:1/-1}
 .p-suki .opts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .p-suki .opts.one{grid-template-columns:minmax(0,1fr)}
-.p-suki .opt{min-width:0}
+.p-suki .opt{min-width:0;min-height:44px;padding-top:6px;padding-bottom:6px}
 .p-suki .opt::before{grid-row:1}
 .p-suki .opt span{align-self:center;min-width:0}
 .p-suki .opt span b{display:block;font-size:16px;font-weight:800;line-height:1.35;word-break:keep-all;letter-spacing:-.02em}
@@ -398,7 +398,7 @@ const QUESTIONS=[
  {key:'effort',t:'高校に入ってから、いちばん時間を使ってきたことは？',
   opts:EFFORTS.map(([v,l])=>({v:v,l:l}))}
 ];
-if(document.documentElement.className.indexOf('p-suki')>=0){(function(){var by={};QUESTIONS.forEach(function(q){by[q.key]=q;});var F=[['野球','スポーツ・健康'],['サッカー','スポーツ・健康'],['バスケ・バレー','スポーツ・健康'],['テニス・卓球','スポーツ・健康'],['陸上・水泳','スポーツ・健康'],['ダンス・チア','スポーツ・健康'],['武道','スポーツ・健康'],['漫画','社会・情報'],['アニメ・ゲーム','社会・情報'],['SNS・動画','社会・情報'],['音楽・吹奏楽','文・人文'],['絵・映画・本','文・人文'],['猫・動物','理工・農'],['料理・ものづくり','理工・農'],['英語・海外','国際・語学'],['子ども・人の心','教育・心理','に興味'],['お店・ビジネス','経済・経営・商','に興味'],['ニュース・社会','法・政治','に興味'],['まだ決まっていない','ALL','']];by.field.t='お子さんの「好き！」はどれですか？';by.field.opts=F.map(function(x){return {v:x[1],l:'<b>'+x[0]+'</b>'+(x.length>2?(x[2]?'<i>'+x[2]+'</i>':''):'<i>が好き！</i>'),n:x[0]};});var E={'部活_実績':['部活で実績がある','大会・コンクールで結果を残した'],'部活_継続':['部活をずっと続けてきた','実績はなくても、やりきった'],'趣味':['部活以外で、ずっと好き','趣味・習い事・推し活など'],'探究活動':['調べたり、活動に広げたり','探究・課外活動・ボランティア'],'なし':['好きだけど、まだ特に何も','ここから始めれば大丈夫です']};by.effort.t='その「好き」に、どう関わってきましたか？';by.effort.opts=by.effort.opts.map(function(o){var e=E[o.v];return e?{v:o.v,l:e[0],s:e[1]}:o;});by.grade.t='最後に、お子さんの学年を教えてください';QUESTIONS.splice(0,QUESTIONS.length,by.field,by.effort,by.gpa,by.eiken,by.grade);})();}
+if(document.documentElement.className.indexOf('p-suki')>=0){(function(){var by={};QUESTIONS.forEach(function(q){by[q.key]=q;});var F=[['野球','スポーツ・健康'],['サッカー','スポーツ・健康'],['バスケ・バレー','スポーツ・健康'],['テニス・卓球','スポーツ・健康'],['陸上・水泳','スポーツ・健康'],['ダンス・チア','スポーツ・健康'],['武道','スポーツ・健康'],['漫画','社会・情報'],['アニメ・ゲーム','社会・情報'],['SNS・動画','社会・情報'],['音楽・吹奏楽','文・人文'],['絵・映画・本','文・人文'],['猫・動物','理工・農'],['料理・工作','理工・農'],['英語・海外','国際・語学'],['子ども・人の心','教育・心理'],['お店・ビジネス','経済・経営・商'],['ニュース・社会','法・政治'],['まだ決まっていない','ALL']];by.field.t='お子さんの「好き！」はどれですか？';by.field.opts=F.map(function(x){return {v:x[1],l:'<b>'+x[0]+'</b>',n:x[0]};});var E={'部活_実績':['部活で実績がある','大会・コンクールで結果を残した'],'部活_継続':['部活をずっと続けてきた','実績はなくても、やりきった'],'趣味':['部活以外で、ずっと好き','趣味・習い事・推し活など'],'探究活動':['調べたり、活動に広げたり','探究・課外活動・ボランティア'],'なし':['好きだけど、まだ特に何も','ここから始めれば大丈夫です']};by.effort.t='その「好き」に、どう関わってきましたか？';by.effort.opts=by.effort.opts.map(function(o){var e=E[o.v];return e?{v:o.v,l:e[0],s:e[1]}:o;});by.grade.t='最後に、お子さんの学年を教えてください';QUESTIONS.splice(0,QUESTIONS.length,by.field,by.effort,by.gpa,by.eiken,by.grade);})();}
 const A={}; let step=0;
 /* ---- 計測 ---- */
  var T0=Date.now(), MAXS=0;
