@@ -318,6 +318,25 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
 .p-suki .h2 .mk{background:none;color:#D9486E;padding:0}
 .p-suki .se-goal div{background:#FBF5E8}
 .p-suki .se-goal div b{color:#D9486E}
+/* CTAボタン：オーマイグラス型のピル（白フチ・上側のツヤ・左に白丸の無料・上段に一言＋細い線・下段に主文・右に▶）。色はLINEの緑系 */
+.btn{position:relative;overflow:hidden;gap:12px;min-height:76px;padding:10px 20px 10px 10px;border-radius:999px;border:2px solid #fff;background:linear-gradient(180deg,#2fd27a 0%,#07b65a 55%,#05a751 100%);box-shadow:0 8px 18px rgba(4,120,60,.22),0 3px 0 #04913f;transition:transform .08s,box-shadow .08s}
+.btn::after{content:'';position:absolute;left:6%;right:6%;top:2px;height:44%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0));pointer-events:none}
+.btn:active{transform:translateY(3px);box-shadow:0 4px 10px rgba(4,120,60,.2),0 0 0 #04913f}
+.b-ic{width:54px;height:54px;border-radius:50%;background:#fff;align-items:center;justify-content:center;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+.b-ic svg{display:none}
+.b-ic::before{content:'無料';font-family:var(--hf);font-weight:800;font-size:15px;letter-spacing:.04em;color:#05a751}
+.b-tx{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}
+.btn .sub{font-size:12px;font-weight:700;letter-spacing:.06em;opacity:1;padding:0 6px 4px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.75)}
+.btn .big,.btn-main .big{font-size:18px;font-weight:800;letter-spacing:.06em;line-height:1.4;text-shadow:0 1px 0 rgba(0,0,0,.08)}
+.btn .big .tn{font-size:1.15em}
+.btn .big .tk{font-size:.8em}
+.b-go{width:auto;height:auto;background:none;color:#fff;font-size:15px;padding:0}
+.stick .btn{min-height:64px}
+.stick .b-ic{width:46px;height:46px}
+.stick .b-ic::before{font-size:13px}
+.ctabox .band{border-radius:10px;margin-bottom:10px;border-bottom:1px solid #F4D2CB}
+.ctabox .band + .btn{margin-top:0;border-radius:999px}
+.btn .big,.btn-main .big{letter-spacing:.03em}
 </style>
 <script>if(/[?&]p=suki(&|$)/.test(location.search)){document.documentElement.className+=' p-suki';}</script>
 <div class="top"><img src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/logo.png" alt="リザプロ"><span>推薦入試専門塾</span></div>
@@ -452,7 +471,7 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
    <div class="g-sub"><div><img src="__G_GAKUBU__" alt="学部適性診断シート（見本）" loading="lazy"><b>学部適性診断シート</b></div><div><img src="__G_KANOUSEI__" alt="合格可能性診断シート（見本）" loading="lazy"><b>合格可能性診断シート</b></div></div>
   </div>
   <div class="ctabox">
-   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を予約する</span><span class="sub">LINEで予約（特典：志望理由書12本）</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
+   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を<br>予約する</span><span class="sub">予約特典：志望理由書12本</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
    <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
   </div>
   <a class="go2" href="#quiz">先に大学・学部チェックをする（全5問・1分）</a>
