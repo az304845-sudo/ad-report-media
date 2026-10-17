@@ -318,16 +318,17 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
 .p-suki .h2 .mk{background:none;color:#D9486E;padding:0}
 .p-suki .se-goal div{background:#FBF5E8}
 .p-suki .se-goal div b{color:#D9486E}
-/* CTAボタン：オーマイグラス型のピル（白フチ・上側のツヤ・左に白丸の無料・上段に一言＋細い線・下段に主文・右に▶）。色はLINEの緑系 */
-.btn{position:relative;overflow:hidden;gap:12px;min-height:76px;padding:10px 20px 10px 10px;border-radius:999px;border:2px solid #fff;background:linear-gradient(180deg,#2fd27a 0%,#07b65a 55%,#05a751 100%);box-shadow:0 8px 18px rgba(4,120,60,.22),0 3px 0 #04913f;transition:transform .08s,box-shadow .08s}
-.btn::after{content:'';position:absolute;left:6%;right:6%;top:2px;height:44%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0));pointer-events:none}
+/* CTAボタン：オーマイグラス型のピル（白フチ・上側のツヤ・左に白丸の無料・上段に一言＋細い線・下段に主文・右に三角）。色はLINEの緑系 */
+.btn{position:relative;overflow:hidden;gap:12px;min-height:76px;padding:10px 20px 10px 10px;border-radius:999px;border:2px solid #fff;background:linear-gradient(180deg,#14bd62 0%,#06a852 60%,#04994a 100%);box-shadow:0 8px 18px rgba(4,120,60,.22),0 3px 0 #04853c;transition:transform .08s,box-shadow .08s}
+.btn::after{content:'';position:absolute;left:6%;right:6%;top:2px;height:30%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0));pointer-events:none;z-index:0}
+.btn > span{position:relative;z-index:1}
 .btn:active{transform:translateY(3px);box-shadow:0 4px 10px rgba(4,120,60,.2),0 0 0 #04913f}
 .b-ic{width:54px;height:54px;border-radius:50%;background:#fff;align-items:center;justify-content:center;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
 .b-ic svg{display:none}
 .b-ic::before{content:'無料';font-family:var(--hf);font-weight:800;font-size:15px;letter-spacing:.04em;color:#05a751}
 .b-tx{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}
-.btn .sub{font-size:12px;font-weight:700;letter-spacing:.06em;opacity:1;padding:0 6px 4px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.75)}
-.btn .big,.btn-main .big{font-size:18px;font-weight:800;letter-spacing:.06em;line-height:1.4;text-shadow:0 1px 0 rgba(0,0,0,.08)}
+.btn .sub{font-size:13px;font-weight:800;letter-spacing:.05em;color:#fff;opacity:1;padding:0 6px 4px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.8);text-shadow:0 1px 1px rgba(0,60,25,.35)}
+.btn .big,.btn-main .big{font-size:18px;font-weight:800;letter-spacing:.06em;line-height:1.4;text-shadow:0 1px 1px rgba(0,60,25,.3)}
 .btn .big .tn{font-size:1.15em}
 .btn .big .tk{font-size:.8em}
 .b-go{width:auto;height:auto;background:none;color:#fff;font-size:15px;padding:0}
