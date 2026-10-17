@@ -326,7 +326,10 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
 .b-ic{width:54px;height:54px;border-radius:50%;background:#fff;align-items:center;justify-content:center;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
 .b-ic svg{display:none}
 .b-ic::before{content:'無料';font-family:var(--hf);font-weight:800;font-size:15px;letter-spacing:.04em;color:#05a751}
-.b-tx{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}
+.b-tx{display:flex;flex-direction:column-reverse;align-items:flex-start;justify-content:center;text-align:left}
+.btn{gap:14px}
+.btn .big,.btn .sub,.btn-main .big{text-align:left}
+.btn .b-tx,.btn .tx{flex:1;min-width:0}
 .btn .sub{font-size:13px;font-weight:800;letter-spacing:.05em;color:#fff;opacity:1;padding:0 6px 4px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.8);text-shadow:0 1px 1px rgba(0,60,25,.35)}
 .btn .big,.btn-main .big{font-size:18px;font-weight:800;letter-spacing:.06em;line-height:1.4;text-shadow:0 1px 1px rgba(0,60,25,.3)}
 .btn .big .tn{font-size:1.15em}
