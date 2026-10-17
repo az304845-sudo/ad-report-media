@@ -204,6 +204,56 @@ body{font-weight:400}
 .r-gl{color:#CFE0F2}
 .r-author .nums b{color:#fff}
 .r-title b{background:#FFF1C2}
+/* 読みやすさ優先（増田さん『いいこと言ってるのにデザインのせいで読みにくい・原色ばっかり』10/17） */
+:root{--red:#004EA2}
+.r-price .tn{color:#E60012}
+body{font-size:16px;line-height:1.95}
+.w{padding:0 20px}
+.r-sec{padding:48px 0}
+.r-txt{font-size:15.5px;line-height:2}
+.r-q .a{font-size:19px}
+.r-q .b{font-size:30px;color:var(--bl)}
+.r-q .c{font-size:21px}
+.r-title{color:var(--nv)}
+.r-title b{background:#FFF8E6;border-bottom:2px solid #E9CF7A;font-size:19px}
+.r-cover{background:#EEF6FC;color:var(--nv);border:2px solid var(--nv);box-shadow:none}
+.r-cover .ct{background:var(--nv);color:#fff}
+.r-cover .on{border-top-color:#9DB6CF}
+.r-black,.r-toc,.r-author{background:#F2F6F7;color:var(--ink)}
+.r-black h2,.r-toc h2,.r-author h2{color:var(--nv)}
+.r-black h2 .y,.r-toc h2 .y,.r-black .end .y{color:var(--bl);border-bottom:0}
+.r-black .end{color:var(--nv)}
+.r-chk{border:1px solid var(--line)}
+.r-chk li{font-size:15px}
+.r-toc .chev{border-color:var(--nv)}
+.r-gl{color:var(--bl);border-color:var(--line)}
+.r-list{border:1px solid var(--line)}
+.r-toc .r-note{color:var(--mute)!important}
+.r-author .lb{color:var(--mute)}
+.r-author .bio{color:var(--ink);font-size:15px}
+.r-author .bio b{color:var(--nv)}
+.r-author .nums div{border-color:var(--line);background:#fff;color:var(--nv)}
+.r-author .nums b{color:var(--bl)}
+.r-redband,.r-redq{background:#EEF6FC;color:var(--nv)}
+.r-redq h2{color:var(--nv)}
+.r-redq p b{background:var(--nv);color:#fff}
+.r-big{font-size:26px}
+.r-big .r{background:none;color:var(--bl);padding:0;border-bottom:3px solid #CFE0F2}
+.r-redlbl{background:var(--bl);transform:none;font-size:15px;border-radius:20px}
+.r-ab .c .say,.r-it p,.r-vc p,.r-rs p{font-size:15px}
+.r-ex .ab div+div{border-color:var(--bl);background:#F5F9FD}
+.r-ex .ab div+div b{color:var(--bl)}
+/* ボタン：オーマイグラス型のピル（14003・14049と同じ） */
+.btn{position:relative;overflow:hidden;gap:12px;min-height:76px;padding:10px 20px 10px 10px;border-radius:999px;border:2px solid #fff;background:linear-gradient(180deg,#2fd27a 0%,#07b65a 55%,#05a751 100%);box-shadow:0 8px 18px rgba(4,120,60,.22),0 3px 0 #04913f;transition:transform .08s,box-shadow .08s}
+.btn::after{content:'';position:absolute;left:6%;right:6%;top:2px;height:44%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0));pointer-events:none}
+.btn:active{transform:translateY(3px);box-shadow:0 4px 10px rgba(4,120,60,.2),0 0 0 #04913f}
+.btn .ic{width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+.btn .ic svg{display:none}
+.btn .ic::before{content:'無料';font-family:var(--hf);font-weight:800;font-size:15px;letter-spacing:.04em;color:#05a751}
+.btn .tx{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}
+.btn .sub{font-size:12px;font-weight:700;letter-spacing:.06em;opacity:1;padding:0 6px 4px;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,.75)}
+.btn .big{font-size:18px;font-weight:800;letter-spacing:.04em;line-height:1.4;text-shadow:0 1px 0 rgba(0,0,0,.08)}
+.btn .go{width:auto;height:auto;background:none;color:#fff;font-size:15px}
 </style>
 <div class="top"><img src="https://lp.rizapuro.co.jp/wp-content/uploads/2026/09/logo.png" alt="リザプロ"><span>推薦入試専門塾</span></div>
 
@@ -215,7 +265,7 @@ body{font-weight:400}
   <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="eager"><p>講師：孫 辰洋</p></div>
  </div>
  <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
- <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
 </div></section>
 
 <section class="r-black"><div class="w">
@@ -277,7 +327,7 @@ body{font-weight:400}
   <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="lazy"><p>講師：孫 辰洋</p></div>
  </div>
  <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
- <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
 </div></section>
 
 <section class="r-toc"><div class="w">
@@ -343,7 +393,7 @@ body{font-weight:400}
   <div class="ph"><img src="__FV_BG__" alt="孫 辰洋" loading="lazy"><p>講師：孫 辰洋</p></div>
  </div>
  <p class="r-cap">合否データ10,000件以上・3,000人以上を指導した推薦入試専門塾リザプロ</p>
- <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜・オンライン</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
+ <div class="r-box"><p class="r-bh">参加無料・予約特典つき</p><p class="r-price"><b class="tn">0</b>円<small>（参加無料）</small></p><a class="btn go-line" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="tx"><span class="big">LINEで予約する</span><span class="sub">10/21（水）20:00〜</span></span><span class="go" aria-hidden="true">&#x25b6;</span></a><p class="r-ok">&#x2714; カメラをOFFにしたまま参加できます・保護者だけの参加も歓迎</p><table class="r-bt"><tr><th>10/21 推薦入試勉強会</th><td>オンライン（Zoom）</td></tr><tr><th>予約特典</th><td>合格者の志望理由書12本・診断シート2つ</td></tr></table><p class="r-nt">※LINEで友だち追加して予約します。LINEはいつでも解除できます。</p></div>
 </div></section>
 
 <section class="r-sec r-co"><div class="w">
