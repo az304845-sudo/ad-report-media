@@ -225,6 +225,8 @@ html.p-suki{--navy:#1B2559;--ink:#1B2559;--blue:#E8336C;--red:#E8336C;--mute:#66
 .offer-h{text-align:center;font-size:15px;font-weight:800;line-height:1.6;color:var(--navy)}
 .offer-h b{color:var(--red);font-size:18px}
 .offer-n{margin-top:8px;font-size:12.5px;color:var(--ink);font-weight:700;text-align:center}
+.g-note{margin-top:6px;font-size:11.5px;color:var(--mute);text-align:center;line-height:1.6}
+.howline{margin-top:10px;padding:10px 12px;border-radius:10px;background:#EEF6FC;color:var(--navy);font-size:13.5px;font-weight:700;line-height:1.7;text-align:left}
 .offer-img{margin:8px auto 0;max-width:150px;border-radius:3px}
 .btn-main .big{font-size:19px;line-height:1.4}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
@@ -383,9 +385,10 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
  <p class="res-cap">評定・英検®・興味の近い先輩が多い順<br>（右の数字は、その先輩の志望理由書データの件数）</p>
  <div class="unis" id="unis"></div>
  <div class="ctabox">
-  <p class="band">予約特典：結果<i class="tk">の</i><b class="tn">3</b>校<i class="tk">を</i>含む<br>合格者<i class="tk">の</i>志望理由書<b class="tn">12</b>本</p>
+  <p class="band">予約した方に、チェックで出た<b class="tn">3</b>校<i class="tk">の</i><br>合格者<i class="tk">の</i>志望理由書をプレゼント</p>
   <a class="btn btn-main" href="https://kjtk4dux.autosns.app/addfriend/s/XV71UIMBJy/@811oqoxz" id="cta"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">この結果<i class="tk">の</i>使い方<i class="tk">を</i><br><b class="tn">10/21</b><i class="tk">の</i>勉強会<i class="tk">で</i>聞く</span><span class="sub">LINEで予約する</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
   <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
+  <p class="howline">勉強会では「どうしたら受かるか」「お子さんに合わせた対策」「今から何をいつまでにやるか」をお話しします</p>
  </div>
  <p class="note" id="rnote" hidden></p>
  <div class="gift" hidden>
@@ -396,7 +399,8 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
   <img class="g-img" loading="eager" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
   <p class="g-cap">見本（中身はぼかしています）</p>
   <p class="g-t">実際に合格した先輩が書いた志望理由書です。<br>何をどう書けばいいかの、具体的な参考になります。</p>
-  <p class="offer-n">結果の3校の志望理由書は、予約特典の12本に入っています<br>（勉強会のご予約でLINEにお届け）</p>
+  <p class="offer-n">勉強会のご予約で、LINEにお届けします</p>
+  <p class="g-note">※12校それぞれ1本ずつの中から、出た3校の分をお届けします。学部はチェックの結果と違う場合があります</p>
   <p class="g-more">ほかにも、ご予約の方全員に</p>
   <div class="g-sub"><div><img src="__G_GAKUBU__" alt="学部適性診断シート（見本）" loading="lazy"><b>学部適性診断シート</b></div><div><img src="__G_KANOUSEI__" alt="合格可能性診断シート（見本）" loading="lazy"><b>合格可能性診断シート</b></div></div>
   <h3 id="gifthead" hidden></h3>
@@ -454,7 +458,7 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
  <section class="sec navy"><div class="wrap">
   <h2 class="h2"><i class="tk">じゃあ</i>実際<i class="tk">、</i><br><span class="mk">どうやって？</span></h2>
   <p class="how-lead">具体的なやり方は、<br><b><b class="tn">10/21</b><i class="tk">の</i>勉強会</b>でお話しします。</p>
-  <ul class="how"><li>何から始めればいいか</li><li>好きなことを志望理由にする方法</li><li>評定・英検®の使い方</li><li>高2の今、やっておくこと</li></ul>
+  <ul class="how"><li>どうしたら受かるか</li><li>お子さんに合わせた対策</li><li>今から何を、いつまでにやるか</li><li>好きなことを志望理由にする方法</li></ul>
  </div></section>
  <section class="sec beige"><div class="wrap">
   <span class="eyebrow">無料オンライン勉強会</span>
@@ -467,17 +471,18 @@ html.p-suki{--navy:#092A4D;--ink:#092A4D;--hf:'LINE Seed JP','Hiragino Sans',san
   <div class="gift2">
    <p class="band">予約特典</p>
    <h3 class="g-h">合格<i class="tk">した</i>先輩<i class="tk">の</i><br><span>本物<i class="tk">の</i>志望理由書</span></h3>
-   <p class="g-mine">チェックで出た3校の志望理由書も、<br>この12本に入っています</p>
+   <p class="g-mine">予約した方に、チェックで出た3校の<br>合格者の志望理由書をプレゼント</p>
    <p class="g-plus">合格者<i class="tk">の</i>志望理由書 <b><b class="tn">12</b>本</b>（12校分）</p>
    <img class="g-img" loading="lazy" decoding="async" src="__GIFT__" alt="合格者の志望理由書（見本・中身はぼかしています）">
    <p class="g-cap">見本（中身はぼかしています）</p>
    <p class="g-t">実際に合格した先輩が書いた志望理由書です。<br>何をどう書けばいいかの、具体的な参考になります。</p>
-   <p class="offer-n">結果の3校の志望理由書は、予約特典の12本に入っています<br>（勉強会のご予約でLINEにお届け）</p>
+   <p class="offer-n">勉強会のご予約で、LINEにお届けします<br>（チェックをしていない方には、12校分の12本をお届け）</p>
+   <p class="g-note">※12校それぞれ1本ずつ。学部はチェックの結果と違う場合があります</p>
   <p class="g-more">ほかにも、ご予約の方全員に</p>
    <div class="g-sub"><div><img src="__G_GAKUBU__" alt="学部適性診断シート（見本）" loading="lazy"><b>学部適性診断シート</b></div><div><img src="__G_KANOUSEI__" alt="合格可能性診断シート（見本）" loading="lazy"><b>合格可能性診断シート</b></div></div>
   </div>
   <div class="ctabox">
-   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を<br>予約する</span><span class="sub">予約特典：志望理由書12本</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
+   <a class="btn btn-main" href="#more" id="cta3" role="button"><span class="b-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.4V21l3.4-2.3c.8.2 1.7.3 2.6.3 5.5 0 10-3.6 10-8s-4.5-8-10-8z"/></svg></span><span class="b-tx"><span class="big">10/21の勉強会を<br>予約する</span><span class="sub">予約特典：合格者の志望理由書</span></span><span class="b-go" aria-hidden="true">&#x25b6;</span></a>
    <p class="ctanote">無料・カメラOFFでOK・保護者だけの参加も歓迎</p>
   </div>
   <a class="go2" href="#quiz">先に大学・学部チェックをする（全5問・1分）</a>
@@ -606,7 +611,7 @@ function reveal(){
  $('gifthead').innerHTML= fit>=0
   ? '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします'
   : '勉強会のご予約で<br><span>合格者の志望理由書12本</span>を<br>お渡しします';
- $('sp1').innerHTML='<b>あなたの結果の '+short.join('・')+'</b><br>の、合格した先輩の志望理由書も入っています';
+ $('sp1').innerHTML='予約した方に、<b>あなたの結果の '+short.join('・')+'</b><br>の合格者の志望理由書をプレゼント';
  A.top3=short.join('・');
  $('cta').href=ctaURL();
  T('result');
