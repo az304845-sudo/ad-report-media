@@ -1,0 +1,18 @@
+<!-- CTAボタン：14003 などと同じピル型（白フチ・上側のツヤ・左に白丸の無料・上段に一言＋細い線・下段に主文・右に三角）。中身・リンク・計測は元のまま、見た目だけ上書き（DRM作成 システム系 2026-10-18） -->
+<style>
+#lp0923#lp0923 a.cta{display:grid;grid-template-columns:54px minmax(0,max-content) 14px;grid-template-areas:"ic sub go" "ic big go";column-gap:14px;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:76px;padding:10px 16px;border-radius:999px;border:2px solid #fff;background:linear-gradient(180deg,rgba(255,255,255,.2) 0,rgba(255,255,255,0) 32%),linear-gradient(180deg,#14bd62 0%,#06a852 60%,#04994a 100%);box-shadow:0 8px 18px rgba(4,120,60,.22),0 3px 0 #04853c;color:#fff;text-align:left;text-decoration:none;white-space:normal;line-height:1.35;transition:transform .08s,box-shadow .08s}
+#lp0923#lp0923 a.cta:active{transform:translateY(3px);box-shadow:0 4px 10px rgba(4,120,60,.2),0 0 0 #04913f}
+#lp0923#lp0923 a.cta::before{content:'無料';grid-area:ic;width:54px;height:54px;border-radius:50%;background:#fff;color:#05a751;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;letter-spacing:.04em;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+#lp0923#lp0923 a.cta::after{content:'\25B6';grid-area:go;color:#fff;font-size:14px;line-height:1}
+#lp0923#lp0923 a.cta .ico,#lp0923#lp0923 a.cta .arw{display:none}
+#lp0923#lp0923 a.cta .lbl{grid-area:big;align-self:start;font-size:18px;font-weight:800;letter-spacing:.03em;text-shadow:0 1px 1px rgba(0,60,25,.3)}
+#lp0923#lp0923 a.cta small{grid-area:sub;align-self:end;justify-self:start;display:block;margin:0 0 4px;padding:0 6px 4px;border-bottom:1px solid rgba(255,255,255,.8);font-size:12.5px;font-weight:800;letter-spacing:.03em;line-height:1.4;opacity:1;text-shadow:0 1px 1px rgba(0,60,25,.35);text-wrap:balance}
+#lp0923#lp0923 a.cta.sk{grid-template-areas:"ic big go";min-height:62px;padding-top:6px;padding-bottom:6px}
+#lp0923#lp0923 a.cta.sk::before{width:46px;height:46px;font-size:13px}
+#lp0923#lp0923 a.cta.sk .lbl{align-self:center}
+#lp0923#lp0923 .sticky a.cta{grid-template-columns:46px minmax(0,max-content) 14px}
+#lp0923#lp0923 .sticky-a{display:none!important}
+#lp0923#lp0923 .sticky{display:block!important;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.96) 30%);border-top:0;padding:14px 12px calc(10px + env(safe-area-inset-bottom))}
+#lp0923#lp0923 .sticky .sk-t,#lp0923#lp0923 .sticky .sk-y{display:none}
+#lp0923#lp0923 .foot{padding-bottom:110px}
+</style>
